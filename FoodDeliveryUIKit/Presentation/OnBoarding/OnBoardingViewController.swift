@@ -49,13 +49,13 @@ class OnBoardingViewController: UIViewController {
         } else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
-            onboardingCollectionView.isPagingEnabled = false
+            onboardingCollectionView.isPagingEnabled = false // Necesssary to fix scrollToItem issue in Xcode 14
             onboardingCollectionView.scrollToItem(
                 at: indexPath,
                 at: .centeredHorizontally,
                 animated: true
             )
-            onboardingCollectionView.isPagingEnabled = true
+            onboardingCollectionView.isPagingEnabled = true // Necesssary to fix scrollToItem issue in Xcode 14
         }
         
     }
