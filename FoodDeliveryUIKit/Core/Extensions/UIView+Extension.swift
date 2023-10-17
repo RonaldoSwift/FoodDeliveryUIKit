@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIButton {
+extension UIView {
     
     @IBInspectable var borderColor: UIColor? {
         get {
