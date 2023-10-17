@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */; };
 		4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C4DA2ADA27D8002DDDA2 /* OnBoardingViewController.swift */; };
 		4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C4E02ADA2CAD002DDDA2 /* UIButton+Extension.swift */; };
 		49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4983C4DA2ADA27D8002DDDA2 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		4983C4E02ADA2CAD002DDDA2 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				4983C4DA2ADA27D8002DDDA2 /* OnBoardingViewController.swift */,
 				49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */,
+				4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
+				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
 			);
