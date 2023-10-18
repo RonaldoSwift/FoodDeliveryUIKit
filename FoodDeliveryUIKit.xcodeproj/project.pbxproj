@@ -24,6 +24,11 @@
 		D1D381D82AD4F57F009D31CC /* FoodDeliveryUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381D72AD4F57F009D31CC /* FoodDeliveryUIKitTests.swift */; };
 		D1D381E22AD4F57F009D31CC /* FoodDeliveryUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381E12AD4F57F009D31CC /* FoodDeliveryUIKitUITests.swift */; };
 		D1D381E42AD4F57F009D31CC /* FoodDeliveryUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381E32AD4F57F009D31CC /* FoodDeliveryUIKitUITestsLaunchTests.swift */; };
+		D1FA03BE2ADF583700C41E99 /* Autentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FA03BD2ADF583700C41E99 /* Autentication.storyboard */; };
+		D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA03BF2ADF5BFB00C41E99 /* AutenticationViewController.swift */; };
+		D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA03C12ADF5C4B00C41E99 /* LoginContainerViewController.swift */; };
+		D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA03C32ADF5CA100C41E99 /* SignUpContainerViewController.swift */; };
+		D1FA03C72ADF5CF600C41E99 /* Memoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FA03C62ADF5CF600C41E99 /* Memoria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		D1D381DD2AD4F57F009D31CC /* FoodDeliveryUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDeliveryUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D381E12AD4F57F009D31CC /* FoodDeliveryUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUIKitUITests.swift; sourceTree = "<group>"; };
 		D1D381E32AD4F57F009D31CC /* FoodDeliveryUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1FA03BD2ADF583700C41E99 /* Autentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autentication.storyboard; sourceTree = "<group>"; };
+		D1FA03BF2ADF5BFB00C41E99 /* AutenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationViewController.swift; sourceTree = "<group>"; };
+		D1FA03C12ADF5C4B00C41E99 /* LoginContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainerViewController.swift; sourceTree = "<group>"; };
+		D1FA03C32ADF5CA100C41E99 /* SignUpContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainerViewController.swift; sourceTree = "<group>"; };
+		D1FA03C62ADF5CF600C41E99 /* Memoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memoria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 		D191C0402AD774C600B16BCE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D1FA03BC2ADF57FF00C41E99 /* Autentication */,
 				4983C4D92AD9AAC6002DDDA2 /* OnBoarding */,
 				D1D381C42AD4F575009D31CC /* ViewController.swift */,
 				D191C0482AD7757B00B16BCE /* App */,
@@ -140,6 +151,7 @@
 		D191C0422AD774DB00B16BCE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D1FA03C52ADF5CE400C41E99 /* Memoria */,
 				D191C0442AD7754300B16BCE /* CoreData.swift */,
 			);
 			path = Data;
@@ -213,6 +225,25 @@
 				D1D381E32AD4F57F009D31CC /* FoodDeliveryUIKitUITestsLaunchTests.swift */,
 			);
 			path = FoodDeliveryUIKitUITests;
+			sourceTree = "<group>";
+		};
+		D1FA03BC2ADF57FF00C41E99 /* Autentication */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA03BD2ADF583700C41E99 /* Autentication.storyboard */,
+				D1FA03BF2ADF5BFB00C41E99 /* AutenticationViewController.swift */,
+				D1FA03C12ADF5C4B00C41E99 /* LoginContainerViewController.swift */,
+				D1FA03C32ADF5CA100C41E99 /* SignUpContainerViewController.swift */,
+			);
+			path = Autentication;
+			sourceTree = "<group>";
+		};
+		D1FA03C52ADF5CE400C41E99 /* Memoria */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA03C62ADF5CF600C41E99 /* Memoria.swift */,
+			);
+			path = Memoria;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +353,7 @@
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
 				D1D381C82AD4F575009D31CC /* Main.storyboard in Resources */,
+				D1FA03BE2ADF583700C41E99 /* Autentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,9 +384,13 @@
 				49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
+				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
+				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
+				D1FA03C72ADF5CF600C41E99 /* Memoria.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
+				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
 			);

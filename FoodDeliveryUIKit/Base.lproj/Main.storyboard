@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JS5-sY-utw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JS5-sY-utw">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -124,7 +124,7 @@
                         <outlet property="nextButton" destination="Utw-vh-LdQ" id="jc0-yA-nG1"/>
                         <outlet property="onboardingCollectionView" destination="tnP-cT-6c2" id="XwQ-2S-PZ2"/>
                         <outlet property="pageControl" destination="OS1-Cc-oBo" id="3Ul-xV-0Xa"/>
-                        <segue destination="lE8-sR-bnP" kind="show" identifier="AuthenticationSegue" id="oEh-ky-7Py"/>
+                        <segue destination="whe-Pu-N24" kind="show" identifier="AuthenticationSegue" id="8OR-89-0gm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,31 +132,14 @@
             <point key="canvasLocation" x="-3280.1526717557249" y="-3266.1971830985917"/>
         </scene>
         <!--Autentication-->
-        <scene sceneID="7JN-mc-lqp">
+        <scene sceneID="Phc-Jt-wOz">
             <objects>
-                <viewController id="lE8-sR-bnP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1LY-vG-S3N">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-8W-Yx3">
-                                <rect key="frame" x="159" y="757" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="Plc-nV-aGB" kind="show" id="qgd-w5-jvr"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="itm-Wh-hwU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Autentication" id="tT2-Wq-Vto"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C53-VG-e3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="AutenticationStoryBoardID" storyboardName="Autentication" id="whe-Pu-N24" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lpf-Qz-wzK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRp-QQ-6L8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2466" y="-3266"/>
+            <point key="canvasLocation" x="-2641" y="-3327"/>
         </scene>
         <!--Phone Verification -->
         <scene sceneID="OkG-lw-xg0">
@@ -335,7 +318,7 @@
             <objects>
                 <viewController id="YAC-7J-Xpe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="62r-OC-EYX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnI-G5-Czp">
@@ -361,7 +344,7 @@
             <objects>
                 <viewController id="c6M-ad-hQD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0rI-V1-Ugv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="eOv-qv-mXR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -515,7 +498,7 @@
             <objects>
                 <viewController id="h9c-60-IzB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XUo-kr-YFy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="p0z-84-vUd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -530,7 +513,7 @@
             <objects>
                 <viewController id="ovL-eV-HYW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLm-AR-Nly">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="M8s-Rl-le5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
