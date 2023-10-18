@@ -12,6 +12,7 @@ class LoginContainerViewController: UIViewController {
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var comunicateDelegate: ComunicateDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,10 @@ class LoginContainerViewController: UIViewController {
     
     
     @IBAction func clickInButtonLogin(_ sender: Any) {
-        let email = emailAddressTextField.text ?? "Error no se encontro usuario en la memoria"
+        
+        comunicateDelegate?.clickOnLogin()
+        
+        /*let email = emailAddressTextField.text ?? "Error no se encontro usuario en la memoria"
         let password = passwordTextField.text ?? "Error pasword incorrecto"
         
         
@@ -41,7 +45,7 @@ class LoginContainerViewController: UIViewController {
         } else{
             UserDefaults.standard.set(true, forKey: "logeado")
             setPrincipalRootViewController()
-        }
+        }*/
         
     }
     
@@ -61,4 +65,9 @@ class LoginContainerViewController: UIViewController {
         keyWindow?.rootViewController = principalTabBarConntroller
     }
     
+}
+
+
+protocol ComunicateDelegate {
+    func clickOnLogin()
 }
