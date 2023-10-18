@@ -131,6 +131,16 @@
             </objects>
             <point key="canvasLocation" x="-3280.1526717557249" y="-3266.1971830985917"/>
         </scene>
+        <!--Verification-->
+        <scene sceneID="9mr-SC-PQz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Verification" id="G3p-za-PHX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7FP-0R-QgL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4m-gD-Wbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2624" y="-3478"/>
+        </scene>
         <!--Autentication-->
         <scene sceneID="Phc-Jt-wOz">
             <objects>
@@ -140,22 +150,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRp-QQ-6L8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2641" y="-3327"/>
-        </scene>
-        <!--Phone Verification -->
-        <scene sceneID="OkG-lw-xg0">
-            <objects>
-                <viewController id="Plc-nV-aGB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qJc-sn-fy3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="uGB-Vg-Vn9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Phone Verification " id="nmn-xT-8dd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yg5-kT-ch5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1660" y="-3266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="toZ-pq-Fnr">
