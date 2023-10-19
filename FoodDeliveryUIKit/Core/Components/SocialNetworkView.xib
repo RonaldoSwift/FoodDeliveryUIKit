@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialNetworkView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="1LZ-WE-Uxv" id="4GL-FT-L1E"/>
+                <outlet property="socialNetworkButton" destination="R3N-EF-1b0" id="J2D-kF-Wnl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="193"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-EF-1b0">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="193"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="startLogin:" destination="-1" eventType="touchUpInside" id="WQW-QA-Gc2"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1LZ-WE-Uxv">
+                    <rect key="frame" x="133" y="86.666666666666671" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R3N-EF-1b0" secondAttribute="trailing" id="ChB-eH-lK7"/>
+                <constraint firstItem="R3N-EF-1b0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JFb-hT-IEg"/>
+                <constraint firstItem="R3N-EF-1b0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O4n-4d-cTg"/>
+                <constraint firstItem="1LZ-WE-Uxv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ppj-x9-RZN"/>
+                <constraint firstAttribute="bottom" secondItem="R3N-EF-1b0" secondAttribute="bottom" id="VxY-Hc-nHe"/>
+                <constraint firstItem="1LZ-WE-Uxv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dHX-p8-Q05"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="108" y="-160"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
