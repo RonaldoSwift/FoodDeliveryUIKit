@@ -9,13 +9,19 @@ import UIKit
 
 class AutenticationViewController: UIViewController {
     
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     @IBOutlet weak var loginContainerView: UIView!
     @IBOutlet weak var signUpContainerView: UIView!
     
+    @IBOutlet weak var googleSocialNetworkButtonView: SocialNetworkButtonView!
+    @IBOutlet weak var appleSocialNetworkButtonView: SocialNetworkButtonView!
+    @IBOutlet weak var facebookSocialNetworkButtonView: SocialNetworkButtonView!
     
     private let skyBlueButton: SkyBlueButton = {
         let skyBlueButton = SkyBlueButton(frame: CGRect(x: 0, y: 0, width: 220, height: 55))
-        skyBlueButton.configure(text: "carkis", image: UIImage(systemName: "cart")!, color: .brown)
+        skyBlueButton.configure(text: "Next", image: UIImage(systemName: "cart")!)
         return skyBlueButton
     }()
     
@@ -23,6 +29,7 @@ class AutenticationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUIComponents()
+        setUpViewListeners()
     }
     
     // MARK: - OLD WAY TO HANDLE CONSTRAINTS - Visual Format Language (or VFL).
@@ -44,10 +51,19 @@ class AutenticationViewController: UIViewController {
     private func setUpUIComponents() {
         view.addSubview(skyBlueButton)
         skyBlueButton.translatesAutoresizingMaskIntoConstraints = false
-        skyBlueButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        skyBlueButton.widthAnchor.constraint(equalToConstant: loginContainerView.frame.width).isActive = true
         skyBlueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        skyBlueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        skyBlueButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        skyBlueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         skyBlueButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
+    }
+    
+    private func setUpViewListeners() {
+        skyBlueButton.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+    }
+    
+    @objc func btnClick() {
+        print("hola")
     }
     
     @IBAction func onValueChangedLoginRegister(_ sender: UISegmentedControl) {
@@ -67,6 +83,22 @@ class AutenticationViewController: UIViewController {
         } else {
             
         }
+    }
+    
+    
+    @IBAction func onValueChangedSegmenteControl(_ sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0) {
+            loginContainerView.alpha = 1
+            signUpContainerView.alpha = 0
+        } else {
+            loginContainerView.alpha = 0
+            signUpContainerView.alpha = 1
+        }
+    }
+    
+    
+    @IBAction func clickOnButton(_ sender: Any) {
+        
     }
     
 }

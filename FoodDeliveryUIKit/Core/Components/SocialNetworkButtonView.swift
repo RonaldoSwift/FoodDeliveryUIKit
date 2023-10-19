@@ -12,9 +12,7 @@ protocol SocialNetworkViewDelegate {
 }
 
 @IBDesignable
-class SocialNetworkView: UIView {
-    
-    static let identifier = "SocialNetworkView"
+class SocialNetworkButtonView: UIView {
     
     var delegate: SocialNetworkViewDelegate?
     var socialNetworkValue = SocialNetwork.DEFAULT
@@ -49,7 +47,7 @@ class SocialNetworkView: UIView {
     }
     
     func initSubviews() {
-        let nib = UINib(nibName: SocialNetworkView.identifier, bundle: nil)
+        let nib = UINib(nibName: String(describing: SocialNetworkButtonView.self), bundle: nil)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Unable to convert nib")
         }

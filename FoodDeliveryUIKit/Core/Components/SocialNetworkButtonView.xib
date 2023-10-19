@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialNetworkView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialNetworkButtonView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicatorView" destination="1LZ-WE-Uxv" id="4GL-FT-L1E"/>
                 <outlet property="socialNetworkButton" destination="R3N-EF-1b0" id="J2D-kF-Wnl"/>
@@ -22,7 +22,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3N-EF-1b0">
                     <rect key="frame" x="0.0" y="0.0" width="286" height="193"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Facebook"/>
                     <connections>
                         <action selector="startLogin:" destination="-1" eventType="touchUpInside" id="WQW-QA-Gc2"/>
                     </connections>
@@ -45,6 +45,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Facebook" width="37" height="37"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

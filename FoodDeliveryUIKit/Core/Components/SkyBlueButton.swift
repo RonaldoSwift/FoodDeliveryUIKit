@@ -26,8 +26,9 @@ class SkyBlueButton: UIButton {
         return imageView
     }()
     
-    override init(frame: CGRect) {
+    override init(frame: CGRect) { // Always works with required init, called when running init() or  init(frame)
         super.init(frame: frame)
+        backgroundColor = .systemBlue
         addSubview(primaryLabel)
         addSubview(iconImageView)
         clipsToBounds = true
@@ -35,8 +36,8 @@ class SkyBlueButton: UIButton {
         layer.borderWidth = 1
         layer.borderColor = UIColor.secondarySystemBackground.cgColor
     }
-    
-    required init?(coder: NSCoder) {
+
+    required init?(coder: NSCoder) { // This is used to load a button from Interface Builder
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -44,27 +45,28 @@ class SkyBlueButton: UIButton {
         super.layoutSubviews()
         primaryLabel.sizeToFit()
         let iconSize: CGFloat = 30
-        let iconRightPadding: CGFloat = 8
-        let iconX: CGFloat = (frame.size.width - primaryLabel.frame.size.width - iconSize - iconRightPadding) / 2
+        let iconRightPadding: CGFloat = 18
+        let labelX: CGFloat = (frame.size.width - primaryLabel.frame.size.width) / 2
+        let iconX: CGFloat = (frame.size.width + primaryLabel.frame.size.width + iconRightPadding) / 2
+        
+        primaryLabel.frame = CGRect(
+            x: labelX,
+            y: 0,
+            width: primaryLabel.frame.size.width,
+            height: frame.size.height
+        )
+        
         iconImageView.frame = CGRect(
             x: iconX,
             y: (frame.size.height - iconSize) / 2,
             width: iconSize,
             height: iconSize
         )
-        
-        primaryLabel.frame = CGRect(
-            x: iconX + iconSize + iconRightPadding,
-            y: 0,
-            width: primaryLabel.frame.size.width,
-            height: frame.size.height
-        )
     }
     
-    func configure(text: String, image: UIImage, color: UIColor) {
+    func configure(text: String, image: UIImage) {
         primaryLabel.text = text
         iconImageView.image = image
-        backgroundColor = color
     }
     
     /*

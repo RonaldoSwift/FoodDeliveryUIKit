@@ -9,13 +9,15 @@ import UIKit
 
 class LoginContainerViewController: UIViewController {
     
-    @IBOutlet weak var emailAddressTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextFieldView: CustomTextFieldView!
+    @IBOutlet weak var passwordTextFieldView: CustomTextFieldView!
     
     var comunicateDelegate: ComunicateDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextFieldView.title = "Email Address"
         
         if(UserDefaults.standard.bool(forKey: "Logear")){
             performSegue(withIdentifier: "PrincipalTabBarController", sender: nil)
