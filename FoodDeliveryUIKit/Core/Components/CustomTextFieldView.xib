@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextFieldView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
             <connections>
+                <outlet property="textField" destination="gjC-Jb-D60" id="O1u-Ts-waN"/>
                 <outlet property="titlePaddingLabel" destination="Z1A-k2-YuX" id="avM-rs-X3R"/>
             </connections>
         </placeholder>

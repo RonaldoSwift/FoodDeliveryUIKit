@@ -11,6 +11,7 @@ import UIKit
 class CustomTextFieldView: UIView {
 
     @IBOutlet weak var titlePaddingLabel: PaddingLabel!
+    @IBOutlet private weak var textField: UITextField!
     
     @IBInspectable
     var title: String? {
@@ -37,6 +38,10 @@ class CustomTextFieldView: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
+    }
+    
+    func getText() -> String {
+        return textField.text ?? ""
     }
     
     /*

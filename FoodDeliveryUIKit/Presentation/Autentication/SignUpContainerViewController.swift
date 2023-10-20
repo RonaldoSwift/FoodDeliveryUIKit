@@ -9,6 +9,11 @@ import UIKit
 
 class SignUpContainerViewController: UIViewController {
 
+    
+    @IBOutlet weak var emailTextFieldView: CustomTextFieldView!
+    @IBOutlet weak var phoneNumberTextFieldView: CustomTextFieldView!
+    @IBOutlet weak var passwordTextFieldView: CustomTextFieldView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

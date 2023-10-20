@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="height" constant="340" id="wVK-z2-QpX"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="YrG-Pm-7yW" kind="embed" identifier="FirstStoryboardEmbedSegue" id="lNr-rz-4hS"/>
+                                    <segue destination="YrG-Pm-7yW" kind="embed" identifier="LoginStoryboardEmbedSegue" id="lNr-rz-4hS"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-8S-bSb">
@@ -77,7 +77,7 @@
                                     <constraint firstAttribute="height" constant="340" id="jgB-IR-KMK"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="kae-0u-WV6" kind="embed" id="McE-DL-KCW"/>
+                                    <segue destination="kae-0u-WV6" kind="embed" identifier="SignUpStoryboardEmbedSegue" id="McE-DL-KCW"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -108,11 +108,22 @@
                         <outlet property="loginContainerView" destination="Guq-yb-8TI" id="1qg-ip-Xal"/>
                         <outlet property="segmentedControl" destination="MIz-8t-0zI" id="Nkj-bg-fvC"/>
                         <outlet property="signUpContainerView" destination="Xaq-8S-bSb" id="4MW-NQ-RHe"/>
+                        <segue destination="mIa-LO-6cE" kind="show" identifier="VerificationSegue" id="FRs-eH-vLn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2d-fu-mIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2466.4122137404579" y="-3266.1971830985917"/>
+        </scene>
+        <!--Verification-->
+        <scene sceneID="NFu-OD-YCd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Verification" id="mIa-LO-6cE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9eZ-s5-elv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGM-B7-Esu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1438" y="-3266"/>
         </scene>
         <!--Login Container View Controller-->
         <scene sceneID="OZz-qE-x06">
@@ -142,21 +153,23 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nx-yK-OpN">
-                                <rect key="frame" x="209" y="215" width="136" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wA5-gI-ShX">
+                                <rect key="frame" x="185" y="192" width="160" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                                <connections>
+                                    <action selector="clickOnForgotPassword:" destination="YrG-Pm-7yW" eventType="touchUpInside" id="tRK-ft-1KM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7MS-qU-wEs"/>
                         <constraints>
-                            <constraint firstItem="6Nx-yK-OpN" firstAttribute="top" secondItem="x5D-3N-T15" secondAttribute="bottom" constant="39" id="03K-Gs-a3o"/>
                             <constraint firstAttribute="trailing" secondItem="1hl-Si-LCV" secondAttribute="trailing" id="8rM-VF-H8a"/>
                             <constraint firstItem="1hl-Si-LCV" firstAttribute="top" secondItem="4Tj-vR-jRN" secondAttribute="top" id="BTh-Pp-ekl"/>
+                            <constraint firstItem="wA5-gI-ShX" firstAttribute="top" secondItem="x5D-3N-T15" secondAttribute="bottom" constant="16" id="M5a-wP-gRK"/>
                             <constraint firstItem="x5D-3N-T15" firstAttribute="leading" secondItem="4Tj-vR-jRN" secondAttribute="leading" id="ThR-Yb-as0"/>
-                            <constraint firstItem="6Nx-yK-OpN" firstAttribute="trailing" secondItem="x5D-3N-T15" secondAttribute="trailing" id="VvY-ga-W8a"/>
                             <constraint firstItem="1hl-Si-LCV" firstAttribute="leading" secondItem="4Tj-vR-jRN" secondAttribute="leading" id="fSA-1E-5J8"/>
+                            <constraint firstItem="wA5-gI-ShX" firstAttribute="trailing" secondItem="x5D-3N-T15" secondAttribute="trailing" id="nYA-G8-uqM"/>
                             <constraint firstItem="x5D-3N-T15" firstAttribute="top" secondItem="1hl-Si-LCV" secondAttribute="bottom" constant="16" id="nvk-xt-iw5"/>
                             <constraint firstAttribute="trailing" secondItem="x5D-3N-T15" secondAttribute="trailing" id="u52-px-hhW"/>
                         </constraints>
@@ -168,12 +181,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJj-fX-xW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1727" y="-3094"/>
+            <point key="canvasLocation" x="-2914" y="-2710"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Container View Controller-->
         <scene sceneID="2iK-tZ-oNJ">
             <objects>
-                <viewController id="kae-0u-WV6" sceneMemberID="viewController">
+                <viewController id="kae-0u-WV6" customClass="SignUpContainerViewController" customModule="FoodDeliveryUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7p3-yS-APk">
                         <rect key="frame" x="0.0" y="0.0" width="345" height="340"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +222,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vzi-Lm-b8f"/>
                         <constraints>
                             <constraint firstItem="Y7P-6T-Zxe" firstAttribute="trailing" secondItem="fFC-Sr-cqu" secondAttribute="trailing" id="7bI-np-ZZs"/>
                             <constraint firstItem="xFp-Jh-PzF" firstAttribute="trailing" secondItem="Y7P-6T-Zxe" secondAttribute="trailing" id="CJG-np-scc"/>
@@ -221,10 +235,15 @@
                             <constraint firstItem="fFC-Sr-cqu" firstAttribute="top" secondItem="7p3-yS-APk" secondAttribute="top" id="yGJ-bl-t9v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextFieldView" destination="fFC-Sr-cqu" id="92S-fk-2UC"/>
+                        <outlet property="passwordTextFieldView" destination="xFp-Jh-PzF" id="bGv-9l-t1e"/>
+                        <outlet property="phoneNumberTextFieldView" destination="Y7P-6T-Zxe" id="jd8-U2-L7U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMC-pR-JEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1726" y="-3397"/>
+            <point key="canvasLocation" x="-2021" y="-2711"/>
         </scene>
     </scenes>
     <resources>
