@@ -17,6 +17,7 @@
 		D15276A62AE1A4BA008CAE26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15276A52AE1A4BA008CAE26 /* HomeViewController.swift */; };
 		D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16AC66D2ADF5F6900DEE9CD /* Verification.storyboard */; };
 		D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16AC66F2AE0643C00DEE9CD /* VerificationViewController.swift */; };
+		D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */; };
 		D191C0452AD7754300B16BCE /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191C0442AD7754300B16BCE /* CoreData.swift */; };
 		D191C0472AD7756400B16BCE /* Ejemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191C0462AD7756400B16BCE /* Ejemplo.swift */; };
 		D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381C02AD4F575009D31CC /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		D15276A52AE1A4BA008CAE26 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D16AC66D2ADF5F6900DEE9CD /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		D16AC66F2AE0643C00DEE9CD /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaCodigoVerificacion.swift; sourceTree = "<group>"; };
 		D191C0442AD7754300B16BCE /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		D191C0462AD7756400B16BCE /* Ejemplo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejemplo.swift; sourceTree = "<group>"; };
 		D1D381BD2AD4F575009D31CC /* FoodDeliveryUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FA03C62ADF5CF600C41E99 /* Memoria.swift */,
+				D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */,
 			);
 			path = Memoria;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
 				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
+				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				D1FA03C72ADF5CF600C41E99 /* Memoria.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
