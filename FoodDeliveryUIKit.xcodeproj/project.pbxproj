@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */; };
+		4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6392AE0BA210093D86E /* SocialNetwork.swift */; };
+		4927D6402AE18B330093D86E /* CustomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */; };
+		4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6412AE18B5E0093D86E /* CustomTextFieldView.swift */; };
+		4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6432AE191190093D86E /* PaddingLabel.swift */; };
+		4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6452AE1A50B0093D86E /* GradientButton.swift */; };
+		4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */; };
+		4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */; };
+		4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */; };
 		4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C4DA2ADA27D8002DDDA2 /* OnBoardingViewController.swift */; };
 		4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983C4E02ADA2CAD002DDDA2 /* UIButton+Extension.swift */; };
 		49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */; };
@@ -53,6 +61,14 @@
 
 /* Begin PBXFileReference section */
 		4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		4927D6392AE0BA210093D86E /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
+		4927D6412AE18B5E0093D86E /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		4927D6432AE191190093D86E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		4927D6452AE1A50B0093D86E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyBlueButton.swift; sourceTree = "<group>"; };
+		4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkButtonView.xib; sourceTree = "<group>"; };
+		4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkButtonView.swift; sourceTree = "<group>"; };
 		4983C4DA2ADA27D8002DDDA2 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		4983C4E02ADA2CAD002DDDA2 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +124,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4969E38E2AE0535500E7D00C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */,
+				4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */,
+				4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */,
+				4927D6392AE0BA210093D86E /* SocialNetwork.swift */,
+				4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */,
+				4927D6412AE18B5E0093D86E /* CustomTextFieldView.swift */,
+				4927D6432AE191190093D86E /* PaddingLabel.swift */,
+				4927D6452AE1A50B0093D86E /* GradientButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4983C4D92AD9AAC6002DDDA2 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +152,7 @@
 		4983C4DC2ADA2B52002DDDA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4969E38E2AE0535500E7D00C /* Components */,
 				4983C4DD2ADA2B64002DDDA2 /* Extensions */,
 			);
 			path = Core;
@@ -370,8 +402,10 @@
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
 				D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
+				4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */,
 				D1D381C82AD4F575009D31CC /* Main.storyboard in Resources */,
 				D1FA03BE2ADF583700C41E99 /* Autentication.storyboard in Resources */,
+				4927D6402AE18B330093D86E /* CustomTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,17 +433,23 @@
 				D191C0452AD7754300B16BCE /* CoreData.swift in Sources */,
 				D191C0472AD7756400B16BCE /* Ejemplo.swift in Sources */,
 				D1D381C52AD4F575009D31CC /* ViewController.swift in Sources */,
+				4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */,
 				49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
+				4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */,
 				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
 				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
+				4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */,
+				4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */,
+				4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */,
 				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				D1FA03C72ADF5CF600C41E99 /* Memoria.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
+				4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */,
 				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
