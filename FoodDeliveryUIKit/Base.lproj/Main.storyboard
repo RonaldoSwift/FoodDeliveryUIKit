@@ -570,10 +570,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rjh-yD-qwI" kind="relationship" relationship="rootViewController" id="rI0-gC-2U3"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta0-dg-zwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1135" y="422"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="klW-2t-A4s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="rjh-yD-qwI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mMg-8T-ygy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7wG-kD-PhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="422"/>
         </scene>
         <!--Discover-->
         <scene sceneID="uEh-5G-Zzo">
