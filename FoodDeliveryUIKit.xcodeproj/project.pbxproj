@@ -13,6 +13,9 @@
 		4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6412AE18B5E0093D86E /* CustomTextFieldView.swift */; };
 		4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6432AE191190093D86E /* PaddingLabel.swift */; };
 		4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6452AE1A50B0093D86E /* GradientButton.swift */; };
+		4964D3162AEE045700089439 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964D3152AEE045700089439 /* Gallery.storyboard */; };
+		4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D3172AEE04FF00089439 /* GalleryViewController.swift */; };
+		4964D31A2AEE05E700089439 /* GalleryVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */; };
 		4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */; };
 		4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */; };
 		4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */; };
@@ -66,6 +69,9 @@
 		4927D6412AE18B5E0093D86E /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		4927D6432AE191190093D86E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		4927D6452AE1A50B0093D86E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		4964D3152AEE045700089439 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		4964D3172AEE04FF00089439 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryVC+Delegate.swift"; sourceTree = "<group>"; };
 		4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyBlueButton.swift; sourceTree = "<group>"; };
 		4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkButtonView.xib; sourceTree = "<group>"; };
 		4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkButtonView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4964D3142AEE03DF00089439 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4964D3152AEE045700089439 /* Gallery.storyboard */,
+				4964D3172AEE04FF00089439 /* GalleryViewController.swift */,
+				4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		4969E38E2AE0535500E7D00C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +195,7 @@
 		D191C0402AD774C600B16BCE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4964D3142AEE03DF00089439 /* Gallery */,
 				D16AC66C2ADF5F2000DEE9CD /* Verification */,
 				D1FA03BC2ADF57FF00C41E99 /* Autentication */,
 				4983C4D92AD9AAC6002DDDA2 /* OnBoarding */,
@@ -400,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
+				4964D3162AEE045700089439 /* Gallery.storyboard in Resources */,
 				D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
 				4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */,
@@ -438,6 +456,7 @@
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
 				4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */,
+				4964D31A2AEE05E700089439 /* GalleryVC+Delegate.swift in Sources */,
 				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
 				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
@@ -451,6 +470,7 @@
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
 				4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */,
 				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
+				4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
 			);
