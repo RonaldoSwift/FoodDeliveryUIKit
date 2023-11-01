@@ -30,6 +30,15 @@
 		49971E2F2AEC87160081AAEA /* DiscoverViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49971E2E2AEC87160081AAEA /* DiscoverViewController+Delegate.swift */; };
 		49971E312AEC89370081AAEA /* CustomClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49971E302AEC89370081AAEA /* CustomClusterAnnotationView.swift */; };
 		49971E332AEC8A4B0081AAEA /* CustomClusterAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49971E322AEC8A4B0081AAEA /* CustomClusterAnnotationView.xib */; };
+		49CE244A2AF20398002BFB49 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49CE24492AF20398002BFB49 /* Category.storyboard */; };
+		49CE244C2AF203B1002BFB49 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE244B2AF203B1002BFB49 /* CategoryViewController.swift */; };
+		49CE244F2AF20520002BFB49 /* CategoryVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE244E2AF20520002BFB49 /* CategoryVC+Delegate.swift */; };
+		49CE24512AF20EF0002BFB49 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24502AF20EF0002BFB49 /* Category.swift */; };
+		49CE24542AF2100B002BFB49 /* FoodDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24522AF2100B002BFB49 /* FoodDataBase.xcdatamodeld */; };
+		49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24962AF213FB002BFB49 /* CategoryRepository.swift */; };
+		49CE24992AF21425002BFB49 /* CategoryOfflineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */; };
+		49CE249C2AF21852002BFB49 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE249B2AF21852002BFB49 /* CategoryViewModel.swift */; };
+		49CE249E2AF21CF6002BFB49 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE249D2AF21CF6002BFB49 /* PersistenceController.swift */; };
 		49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */; };
 		49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F562ADDEE4A00A3C54C /* OnboardingSlide.swift */; };
 		49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F582ADDFF3C00A3C54C /* UIView+Extension.swift */; };
@@ -106,6 +115,15 @@
 		49971E2E2AEC87160081AAEA /* DiscoverViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverViewController+Delegate.swift"; sourceTree = "<group>"; };
 		49971E302AEC89370081AAEA /* CustomClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClusterAnnotationView.swift; sourceTree = "<group>"; };
 		49971E322AEC8A4B0081AAEA /* CustomClusterAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomClusterAnnotationView.xib; sourceTree = "<group>"; };
+		49CE24492AF20398002BFB49 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		49CE244B2AF203B1002BFB49 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		49CE244E2AF20520002BFB49 /* CategoryVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryVC+Delegate.swift"; sourceTree = "<group>"; };
+		49CE24502AF20EF0002BFB49 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		49CE24532AF2100B002BFB49 /* FoodDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodDataBase.xcdatamodel; sourceTree = "<group>"; };
+		49CE24962AF213FB002BFB49 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOfflineService.swift; sourceTree = "<group>"; };
+		49CE249B2AF21852002BFB49 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		49CE249D2AF21CF6002BFB49 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		49D22F562ADDEE4A00A3C54C /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		49D22F582ADDFF3C00A3C54C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -256,6 +274,43 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		49CE24482AF20388002BFB49 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				49CE24492AF20398002BFB49 /* Category.storyboard */,
+				49CE244B2AF203B1002BFB49 /* CategoryViewController.swift */,
+				49CE244E2AF20520002BFB49 /* CategoryVC+Delegate.swift */,
+				49CE249B2AF21852002BFB49 /* CategoryViewModel.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		49CE24552AF2101D002BFB49 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				49CE249A2AF2182F002BFB49 /* DataSources */,
+				49CE24522AF2100B002BFB49 /* FoodDataBase.xcdatamodeld */,
+				49CE249D2AF21CF6002BFB49 /* PersistenceController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		49CE24952AF213DC002BFB49 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				49CE24962AF213FB002BFB49 /* CategoryRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		49CE249A2AF2182F002BFB49 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		D15276A22AE1A408008CAE26 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +332,7 @@
 		D191C0402AD774C600B16BCE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				49CE24482AF20388002BFB49 /* Category */,
 				49971E202AEC7AF60081AAEA /* Discover */,
 				D15276A22AE1A408008CAE26 /* Home */,
 				D16AC66C2ADF5F2000DEE9CD /* Verification */,
@@ -291,6 +347,7 @@
 		D191C0412AD774D000B16BCE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				49CE24952AF213DC002BFB49 /* Repository */,
 				D191C0432AD7750900B16BCE /* Modelo */,
 			);
 			path = Domain;
@@ -299,6 +356,7 @@
 		D191C0422AD774DB00B16BCE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				49CE24552AF2101D002BFB49 /* CoreData */,
 				D1FA03C52ADF5CE400C41E99 /* Memoria */,
 				D191C0442AD7754300B16BCE /* CoreData.swift */,
 			);
@@ -311,6 +369,7 @@
 				49971E252AEC80390081AAEA /* CustomAnnotation.swift */,
 				D191C0462AD7756400B16BCE /* Ejemplo.swift */,
 				49D22F562ADDEE4A00A3C54C /* OnboardingSlide.swift */,
+				49CE24502AF20EF0002BFB49 /* Category.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -510,6 +569,7 @@
 			files = (
 				49971E2D2AEC84A80081AAEA /* CustomAnnotationView.xib in Resources */,
 				4964D3102AED6E8300089439 /* DiscoverCollectionViewCell.xib in Resources */,
+				49CE244A2AF20398002BFB49 /* Category.storyboard in Resources */,
 				D1FCEE8B2AEC9115000635A0 /* BurguerCategoryCollectionViewCell.xib in Resources */,
 				D1FCEE8F2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib in Resources */,
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
@@ -548,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CE24542AF2100B002BFB49 /* FoodDataBase.xcdatamodeld in Sources */,
 				D191C0452AD7754300B16BCE /* CoreData.swift in Sources */,
 				D1FCEE932AEC984A000635A0 /* MemoriaRestaurante.swift in Sources */,
 				D191C0472AD7756400B16BCE /* Ejemplo.swift in Sources */,
@@ -556,6 +617,7 @@
 				D15276A62AE1A4BA008CAE26 /* HomeViewController.swift in Sources */,
 				4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */,
 				49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */,
+				49CE249E2AF21CF6002BFB49 /* PersistenceController.swift in Sources */,
 				D15276B32AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
@@ -570,6 +632,8 @@
 				4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */,
 				4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */,
 				D15276B62AEC89ED008CAE26 /* MemoriaCategories.swift in Sources */,
+				49CE244C2AF203B1002BFB49 /* CategoryViewController.swift in Sources */,
+				49CE244F2AF20520002BFB49 /* CategoryVC+Delegate.swift in Sources */,
 				4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */,
 				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				49971E312AEC89370081AAEA /* CustomClusterAnnotationView.swift in Sources */,
@@ -577,12 +641,16 @@
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				49971E2A2AEC83D30081AAEA /* CircleImageView.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
+				49CE24512AF20EF0002BFB49 /* Category.swift in Sources */,
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
 				4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */,
 				4964D30F2AED6E8300089439 /* DiscoverCollectionViewCell.swift in Sources */,
+				49CE249C2AF21852002BFB49 /* CategoryViewModel.swift in Sources */,
 				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
 				49971E2F2AEC87160081AAEA /* DiscoverViewController+Delegate.swift in Sources */,
+				49CE24992AF21425002BFB49 /* CategoryOfflineService.swift in Sources */,
 				49971E262AEC80390081AAEA /* CustomAnnotation.swift in Sources */,
+				49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
 			);
@@ -949,6 +1017,19 @@
 			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		49CE24522AF2100B002BFB49 /* FoodDataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49CE24532AF2100B002BFB49 /* FoodDataBase.xcdatamodel */,
+			);
+			currentVersion = 49CE24532AF2100B002BFB49 /* FoodDataBase.xcdatamodel */;
+			path = FoodDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D1D381B52AD4F575009D31CC /* Project object */;
 }
