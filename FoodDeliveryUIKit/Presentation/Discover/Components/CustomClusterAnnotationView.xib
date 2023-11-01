@@ -43,6 +43,11 @@
             <point key="canvasLocation" x="181.67938931297709" y="-205.63380281690141"/>
         </view>
     </objects>
+    <designables>
+        <designable name="H7Y-ox-isM">
+            <size key="intrinsicContentSize" width="100" height="102.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Cluster" width="100" height="102.5"/>
         <systemColor name="systemPinkColor">

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RestaurantViewController" customModule="FoodDeliveryUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mackDonaldImage" translatesAutoresizingMaskIntoConstraints="NO" id="stU-87-LeA">
+                                <rect key="frame" x="0.0" y="105" width="393" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Sbd-Dq-f4L"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-Wc-zVn" customClass="IconsCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="195" y="69" width="178" height="26"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="38q-ve-QFd"/>
+                                    <constraint firstAttribute="height" constant="26" id="7EE-XJ-0Wv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-Hq-DE7" customClass="CardTitleCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="10" y="285" width="373" height="80"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="75q-Eq-twf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GB0-IS-21p">
+                                <rect key="frame" x="10" y="375" width="373" height="115"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-mW-195">
+                                        <rect key="frame" x="298.33333333333331" y="38" width="49.666666666666686" height="34"/>
+                                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right.circle.fill" catalog="system"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-FF-h2G" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="45" width="120" height="20"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="J2W-gn-TV5"/>
+                                            <constraint firstAttribute="width" constant="120" id="j3r-Ct-RG5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoDelivery"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Delivers in 15-20 min"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7c-Na-zdD" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="75" width="120" height="20"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="8b9-WG-iJu"/>
+                                            <constraint firstAttribute="height" constant="20" id="izg-aT-p0n"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconolist"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Burguers"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVZ-Vy-rET" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="15" width="120" height="20"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="NmT-IC-i5J"/>
+                                            <constraint firstAttribute="height" constant="20" id="Xuq-ed-J5b"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoStart"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Retings: 4.5"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="trailing" secondItem="tVZ-Vy-rET" secondAttribute="trailing" id="0NZ-yh-OFD"/>
+                                    <constraint firstItem="Hh9-mW-195" firstAttribute="centerY" secondItem="eeB-FF-h2G" secondAttribute="centerY" id="6aK-Li-E01"/>
+                                    <constraint firstItem="tVZ-Vy-rET" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="top" constant="15" id="Hll-FT-OF7"/>
+                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="leading" secondItem="tVZ-Vy-rET" secondAttribute="leading" id="Qeo-wI-mpP"/>
+                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="top" secondItem="tVZ-Vy-rET" secondAttribute="bottom" constant="10" id="VMl-nC-PrJ"/>
+                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="top" secondItem="eeB-FF-h2G" secondAttribute="bottom" constant="10" id="Woh-RZ-Hef"/>
+                                    <constraint firstItem="Hh9-mW-195" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="top" constant="38" id="Yay-Wr-4Wt"/>
+                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="trailing" secondItem="tVZ-Vy-rET" secondAttribute="trailing" id="a11-W0-VmA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hh9-mW-195" secondAttribute="trailing" constant="25" id="rGR-K4-9YZ"/>
+                                    <constraint firstItem="tVZ-Vy-rET" firstAttribute="leading" secondItem="GB0-IS-21p" secondAttribute="leading" constant="10" id="s7X-xx-k7o"/>
+                                    <constraint firstAttribute="height" constant="115" id="v0P-FL-qW8"/>
+                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="leading" secondItem="tVZ-Vy-rET" secondAttribute="leading" id="w6H-ea-bAN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXa-Jd-dH3" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="10" y="505" width="105" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="3Ux-bJ-Dsy"/>
+                                    <constraint firstAttribute="height" constant="40" id="smW-Dj-ngT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M98-UD-uHq" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="145" y="505" width="105" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UhJ-sq-gKo"/>
+                                    <constraint firstAttribute="width" constant="105" id="gAk-Wk-mK7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZT-Lu-v5p" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="280" y="505" width="105" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="2tW-wa-3Q1"/>
+                                    <constraint firstAttribute="height" constant="40" id="Axc-oe-jJb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kdN-Hq-DE7" firstAttribute="top" secondItem="stU-87-LeA" secondAttribute="bottom" constant="10" id="0BU-jU-W4i"/>
+                            <constraint firstItem="KZT-Lu-v5p" firstAttribute="leading" secondItem="M98-UD-uHq" secondAttribute="trailing" constant="30" id="1b6-NJ-CLP"/>
+                            <constraint firstItem="GB0-IS-21p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="2CP-IK-etU"/>
+                            <constraint firstItem="M98-UD-uHq" firstAttribute="centerY" secondItem="nXa-Jd-dH3" secondAttribute="centerY" id="8YR-Zt-DOV"/>
+                            <constraint firstItem="5gc-Wc-zVn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="CD1-kz-Lhu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="stU-87-LeA" secondAttribute="trailing" id="Maj-dJ-4Oq"/>
+                            <constraint firstItem="KZT-Lu-v5p" firstAttribute="centerY" secondItem="nXa-Jd-dH3" secondAttribute="centerY" id="OGq-eF-B5u"/>
+                            <constraint firstItem="M98-UD-uHq" firstAttribute="leading" secondItem="nXa-Jd-dH3" secondAttribute="trailing" constant="30" id="TAI-73-ONt"/>
+                            <constraint firstItem="GB0-IS-21p" firstAttribute="top" secondItem="kdN-Hq-DE7" secondAttribute="bottom" constant="10" id="XEj-55-Gm5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GB0-IS-21p" secondAttribute="trailing" constant="10" id="Z8c-Oa-bYw"/>
+                            <constraint firstItem="nXa-Jd-dH3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ZqC-Mo-37D"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kdN-Hq-DE7" secondAttribute="trailing" constant="10" id="d11-d3-HRR"/>
+                            <constraint firstItem="stU-87-LeA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fhn-F8-m5i"/>
+                            <constraint firstItem="kdN-Hq-DE7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="flb-NG-2EV"/>
+                            <constraint firstItem="nXa-Jd-dH3" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="bottom" constant="15" id="h0q-eI-s4b"/>
+                            <constraint firstItem="stU-87-LeA" firstAttribute="top" secondItem="5gc-Wc-zVn" secondAttribute="bottom" constant="10" id="hB0-Qe-hCz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5gc-Wc-zVn" secondAttribute="trailing" constant="20" id="lxq-S8-hJU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="iconoDelivery" width="9" height="9"/>
+        <image name="iconoStart" width="8" height="8"/>
+        <image name="iconolist" width="8" height="8"/>
+        <image name="mackDonaldImage" width="195" height="82"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

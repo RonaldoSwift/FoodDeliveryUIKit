@@ -64,6 +64,18 @@
 		D1FCEE8E2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCEE8C2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift */; };
 		D1FCEE8F2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FCEE8D2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib */; };
 		D1FCEE932AEC984A000635A0 /* MemoriaRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCEE922AEC984A000635A0 /* MemoriaRestaurante.swift */; };
+		FA43A7DE2AF1596A009AF26A /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43A7DD2AF1596A009AF26A /* Restaurant.storyboard */; };
+		FA43A7E42AF15A09009AF26A /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A7E32AF15A09009AF26A /* RestaurantViewController.swift */; };
+		FA43A7E62AF15A6A009AF26A /* RestaurantViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A7E52AF15A6A009AF26A /* RestaurantViewController+Delegate.swift */; };
+		FA43A7F42AF16212009AF26A /* IconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A7F22AF16212009AF26A /* IconsCollectionViewCell.swift */; };
+		FA43A7F52AF16212009AF26A /* IconsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA43A7F32AF16212009AF26A /* IconsCollectionViewCell.xib */; };
+		FA43A7FA2AF170A1009AF26A /* CardTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A7F82AF170A1009AF26A /* CardTitleCollectionViewCell.swift */; };
+		FA43A7FB2AF170A1009AF26A /* CardTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA43A7F92AF170A1009AF26A /* CardTitleCollectionViewCell.xib */; };
+		FA43A8042AF1C72F009AF26A /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = FA43A8032AF1C72F009AF26A /* GRDB */; };
+		FA43A80B2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A8092AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.swift */; };
+		FA43A80C2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA43A80A2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.xib */; };
+		FA43A80F2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43A80D2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.swift */; };
+		FA43A8102AF1CE70009AF26A /* ListaBurguersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA43A80E2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +156,17 @@
 		D1FCEE8C2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantBrandCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1FCEE8D2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantBrandCollectionViewCell.xib; sourceTree = "<group>"; };
 		D1FCEE922AEC984A000635A0 /* MemoriaRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaRestaurante.swift; sourceTree = "<group>"; };
+		FA43A7DD2AF1596A009AF26A /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
+		FA43A7E32AF15A09009AF26A /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		FA43A7E52AF15A6A009AF26A /* RestaurantViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantViewController+Delegate.swift"; sourceTree = "<group>"; };
+		FA43A7F22AF16212009AF26A /* IconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA43A7F32AF16212009AF26A /* IconsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconsCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA43A7F82AF170A1009AF26A /* CardTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA43A7F92AF170A1009AF26A /* CardTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA43A8092AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchYDinnerCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA43A80A2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunchYDinnerCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA43A80D2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaBurguersCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA43A80E2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaBurguersCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4964D3132AED746100089439 /* Cosmos in Frameworks */,
+				FA43A8042AF1C72F009AF26A /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +301,7 @@
 		D191C0402AD774C600B16BCE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA43A7DA2AF158EE009AF26A /* Restaurant */,
 				49971E202AEC7AF60081AAEA /* Discover */,
 				D15276A22AE1A408008CAE26 /* Home */,
 				D16AC66C2ADF5F2000DEE9CD /* Verification */,
@@ -398,6 +423,40 @@
 			path = Memoria;
 			sourceTree = "<group>";
 		};
+		FA43A7DA2AF158EE009AF26A /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A7DB2AF15900009AF26A /* Cells */,
+				FA43A7DC2AF15908009AF26A /* Components */,
+				FA43A7DD2AF1596A009AF26A /* Restaurant.storyboard */,
+				FA43A7E32AF15A09009AF26A /* RestaurantViewController.swift */,
+				FA43A7E52AF15A6A009AF26A /* RestaurantViewController+Delegate.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		FA43A7DB2AF15900009AF26A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A7F22AF16212009AF26A /* IconsCollectionViewCell.swift */,
+				FA43A7F32AF16212009AF26A /* IconsCollectionViewCell.xib */,
+				FA43A7F82AF170A1009AF26A /* CardTitleCollectionViewCell.swift */,
+				FA43A7F92AF170A1009AF26A /* CardTitleCollectionViewCell.xib */,
+				FA43A80D2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.swift */,
+				FA43A80E2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA43A7DC2AF15908009AF26A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA43A8092AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.swift */,
+				FA43A80A2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +475,7 @@
 			name = FoodDeliveryUIKit;
 			packageProductDependencies = (
 				4964D3122AED746100089439 /* Cosmos */,
+				FA43A8032AF1C72F009AF26A /* GRDB */,
 			);
 			productName = FoodDeliveryUIKit;
 			productReference = D1D381BD2AD4F575009D31CC /* FoodDeliveryUIKit.app */;
@@ -491,6 +551,7 @@
 			mainGroup = D1D381B42AD4F575009D31CC;
 			packageReferences = (
 				4964D3112AED746100089439 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				FA43A8022AF1C72F009AF26A /* XCRemoteSwiftPackageReference "GRDB" */,
 			);
 			productRefGroup = D1D381BE2AD4F575009D31CC /* Products */;
 			projectDirPath = "";
@@ -509,16 +570,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				49971E2D2AEC84A80081AAEA /* CustomAnnotationView.xib in Resources */,
+				FA43A80C2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.xib in Resources */,
 				4964D3102AED6E8300089439 /* DiscoverCollectionViewCell.xib in Resources */,
 				D1FCEE8B2AEC9115000635A0 /* BurguerCategoryCollectionViewCell.xib in Resources */,
+				FA43A7FB2AF170A1009AF26A /* CardTitleCollectionViewCell.xib in Resources */,
 				D1FCEE8F2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib in Resources */,
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
 				D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
 				49971E222AEC7B190081AAEA /* Discover.storyboard in Resources */,
 				D15276A42AE1A430008CAE26 /* Home.storyboard in Resources */,
+				FA43A7F52AF16212009AF26A /* IconsCollectionViewCell.xib in Resources */,
+				FA43A8102AF1CE70009AF26A /* ListaBurguersCollectionViewCell.xib in Resources */,
 				4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */,
 				D15276AE2AE9DB7C008CAE26 /* FilterView.xib in Resources */,
+				FA43A7DE2AF1596A009AF26A /* Restaurant.storyboard in Resources */,
 				D15276B42AE9ECF4008CAE26 /* CategoryCollectionViewCell.xib in Resources */,
 				D1D381C82AD4F575009D31CC /* Main.storyboard in Resources */,
 				49971E332AEC8A4B0081AAEA /* CustomClusterAnnotationView.xib in Resources */,
@@ -559,13 +625,18 @@
 				D15276B32AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
+				FA43A7E42AF15A09009AF26A /* RestaurantViewController.swift in Sources */,
 				49971E242AEC7BBD0081AAEA /* DiscoverViewController.swift in Sources */,
 				49971E282AEC82E60081AAEA /* CustomAnnotationView.swift in Sources */,
+				FA43A80F2AF1CE70009AF26A /* ListaBurguersCollectionViewCell.swift in Sources */,
+				FA43A7E62AF15A6A009AF26A /* RestaurantViewController+Delegate.swift in Sources */,
 				D15276B02AE9DC64008CAE26 /* FilterView.swift in Sources */,
 				4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */,
 				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
+				FA43A7FA2AF170A1009AF26A /* CardTitleCollectionViewCell.swift in Sources */,
 				D1FCEE8E2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
+				FA43A80B2AF1CA0C009AF26A /* LunchYDinnerCollectionViewCell.swift in Sources */,
 				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
 				4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */,
 				4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */,
@@ -573,6 +644,7 @@
 				4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */,
 				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				49971E312AEC89370081AAEA /* CustomClusterAnnotationView.swift in Sources */,
+				FA43A7F42AF16212009AF26A /* IconsCollectionViewCell.swift in Sources */,
 				D1FA03C72ADF5CF600C41E99 /* Memoria.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				49971E2A2AEC83D30081AAEA /* CircleImageView.swift in Sources */,
@@ -940,6 +1012,14 @@
 				minimumVersion = 23.0.0;
 			};
 		};
+		FA43A8022AF1C72F009AF26A /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -947,6 +1027,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4964D3112AED746100089439 /* XCRemoteSwiftPackageReference "Cosmos" */;
 			productName = Cosmos;
+		};
+		FA43A8032AF1C72F009AF26A /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA43A8022AF1C72F009AF26A /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
