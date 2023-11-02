@@ -16,6 +16,9 @@
 		4964D30F2AED6E8300089439 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D30D2AED6E8300089439 /* DiscoverCollectionViewCell.swift */; };
 		4964D3102AED6E8300089439 /* DiscoverCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4964D30E2AED6E8300089439 /* DiscoverCollectionViewCell.xib */; };
 		4964D3132AED746100089439 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 4964D3122AED746100089439 /* Cosmos */; };
+		4964D3162AEE045700089439 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964D3152AEE045700089439 /* Gallery.storyboard */; };
+		4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D3172AEE04FF00089439 /* GalleryViewController.swift */; };
+		4964D31A2AEE05E700089439 /* GalleryVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */; };
 		4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */; };
 		4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */; };
 		4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */; };
@@ -104,6 +107,9 @@
 		4927D6452AE1A50B0093D86E /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		4964D30D2AED6E8300089439 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		4964D30E2AED6E8300089439 /* DiscoverCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCollectionViewCell.xib; sourceTree = "<group>"; };
+		4964D3152AEE045700089439 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		4964D3172AEE04FF00089439 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryVC+Delegate.swift"; sourceTree = "<group>"; };
 		4969E38F2AE0543300E7D00C /* SkyBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyBlueButton.swift; sourceTree = "<group>"; };
 		4969E3952AE0A96100E7D00C /* SocialNetworkButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialNetworkButtonView.xib; sourceTree = "<group>"; };
 		4969E3972AE0A98500E7D00C /* SocialNetworkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkButtonView.swift; sourceTree = "<group>"; };
@@ -205,6 +211,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4964D3142AEE03DF00089439 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4964D3152AEE045700089439 /* Gallery.storyboard */,
+				4964D3172AEE04FF00089439 /* GalleryViewController.swift */,
+				4964D3192AEE05E700089439 /* GalleryVC+Delegate.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		4969E38E2AE0535500E7D00C /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +320,7 @@
 				FA43A7DA2AF158EE009AF26A /* Restaurant */,
 				49971E202AEC7AF60081AAEA /* Discover */,
 				D15276A22AE1A408008CAE26 /* Home */,
+				4964D3142AEE03DF00089439 /* Gallery */,
 				D16AC66C2ADF5F2000DEE9CD /* Verification */,
 				D1FA03BC2ADF57FF00C41E99 /* Autentication */,
 				4983C4D92AD9AAC6002DDDA2 /* OnBoarding */,
@@ -576,6 +593,7 @@
 				FA43A7FB2AF170A1009AF26A /* CardTitleCollectionViewCell.xib in Resources */,
 				D1FCEE8F2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib in Resources */,
 				D1D381CD2AD4F57E009D31CC /* LaunchScreen.storyboard in Resources */,
+				4964D3162AEE045700089439 /* Gallery.storyboard in Resources */,
 				D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
 				49971E222AEC7B190081AAEA /* Discover.storyboard in Resources */,
@@ -632,6 +650,7 @@
 				FA43A7E62AF15A6A009AF26A /* RestaurantViewController+Delegate.swift in Sources */,
 				D15276B02AE9DC64008CAE26 /* FilterView.swift in Sources */,
 				4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */,
+				4964D31A2AEE05E700089439 /* GalleryVC+Delegate.swift in Sources */,
 				D1FA03C42ADF5CA100C41E99 /* SignUpContainerViewController.swift in Sources */,
 				FA43A7FA2AF170A1009AF26A /* CardTitleCollectionViewCell.swift in Sources */,
 				D1FCEE8E2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift in Sources */,
@@ -655,6 +674,7 @@
 				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
 				49971E2F2AEC87160081AAEA /* DiscoverViewController+Delegate.swift in Sources */,
 				49971E262AEC80390081AAEA /* CustomAnnotation.swift in Sources */,
+				4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */,
 			);
