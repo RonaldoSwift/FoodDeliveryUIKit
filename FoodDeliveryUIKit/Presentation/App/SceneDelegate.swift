@@ -19,12 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowsScena = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowsScena)
-        let storyBoard = UIStoryboard(name: "Gallery", bundle: nil)
+        let storyBoard = UIStoryboard(name: "Restaurant", bundle: nil)
         
         if(UserDefaults.standard.bool(forKey: "logeado")){
             window.rootViewController = storyBoard.instantiateViewController(withIdentifier: "PrincipalTabBarController")
         } else{
-            window.rootViewController = storyBoard.instantiateViewController(withIdentifier: "GalleryViewController")
+            window.rootViewController = storyBoard.instantiateViewController(withIdentifier: "RestaurantController")
         }
         self.window = window
         window.makeKeyAndVisible()

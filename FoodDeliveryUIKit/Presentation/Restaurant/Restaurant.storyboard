@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +13,7 @@
         <!--Restaurant View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="RestaurantViewController" customModule="FoodDeliveryUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantController" id="Y6W-OH-hqX" customClass="RestaurantViewController" customModule="FoodDeliveryUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,17 +24,22 @@
                                     <constraint firstAttribute="height" constant="170" id="Sbd-Dq-f4L"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-Wc-zVn" customClass="IconsCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-Wc-zVn" customClass="IconsView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
                                 <rect key="frame" x="195" y="69" width="178" height="26"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="178" id="38q-ve-QFd"/>
                                     <constraint firstAttribute="height" constant="26" id="7EE-XJ-0Wv"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-Hq-DE7" customClass="CardTitleCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdN-Hq-DE7" customClass="CardTitleView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
                                 <rect key="frame" x="10" y="285" width="373" height="80"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="75q-Eq-twf"/>
                                 </constraints>
@@ -42,62 +48,71 @@
                                 <rect key="frame" x="10" y="375" width="373" height="115"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-mW-195">
-                                        <rect key="frame" x="298.33333333333331" y="38" width="49.666666666666686" height="34"/>
+                                        <rect key="frame" x="298.33333333333331" y="38" width="49.666666666666686" height="34.333333333333343"/>
                                         <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.right.circle.fill" catalog="system"/>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-FF-h2G" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="45" width="120" height="20"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o1u-rb-NED">
+                                        <rect key="frame" x="10" y="0.0" width="200" height="115"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-FF-h2G" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="38.333333333333336"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoDelivery"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="Delivers in 15-20 min"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorDeFondo">
+                                                        <color key="value" name="fondotarjeta"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorTextFondo">
+                                                        <color key="value" systemColor="labelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVZ-Vy-rET" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="38.333333333333314" width="200" height="38.333333333333343"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoStart"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="Retings: 4.5"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorDeFondo">
+                                                        <color key="value" name="fondotarjeta"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorTextFondo">
+                                                        <color key="value" systemColor="labelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7c-Na-zdD" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="76.666666666666686" width="200" height="38.333333333333343"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconolist"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="Burguers"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorDeFondo">
+                                                        <color key="value" name="fondotarjeta"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="colorTextFondo">
+                                                        <color key="value" systemColor="labelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="J2W-gn-TV5"/>
-                                            <constraint firstAttribute="width" constant="120" id="j3r-Ct-RG5"/>
+                                            <constraint firstAttribute="width" constant="200" id="7P1-ZE-dqN"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoDelivery"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Delivers in 15-20 min"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7c-Na-zdD" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="75" width="120" height="20"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="8b9-WG-iJu"/>
-                                            <constraint firstAttribute="height" constant="20" id="izg-aT-p0n"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconolist"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Burguers"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVZ-Vy-rET" customClass="FilterView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="15" width="120" height="20"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="NmT-IC-i5J"/>
-                                            <constraint firstAttribute="height" constant="20" id="Xuq-ed-J5b"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconoStart"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="name" value="Retings: 4.5"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="backgroundColor" name="fondotarjeta"/>
                                 <constraints>
-                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="trailing" secondItem="tVZ-Vy-rET" secondAttribute="trailing" id="0NZ-yh-OFD"/>
-                                    <constraint firstItem="Hh9-mW-195" firstAttribute="centerY" secondItem="eeB-FF-h2G" secondAttribute="centerY" id="6aK-Li-E01"/>
-                                    <constraint firstItem="tVZ-Vy-rET" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="top" constant="15" id="Hll-FT-OF7"/>
-                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="leading" secondItem="tVZ-Vy-rET" secondAttribute="leading" id="Qeo-wI-mpP"/>
-                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="top" secondItem="tVZ-Vy-rET" secondAttribute="bottom" constant="10" id="VMl-nC-PrJ"/>
-                                    <constraint firstItem="q7c-Na-zdD" firstAttribute="top" secondItem="eeB-FF-h2G" secondAttribute="bottom" constant="10" id="Woh-RZ-Hef"/>
+                                    <constraint firstItem="o1u-rb-NED" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="top" id="PM9-TA-Pu6"/>
                                     <constraint firstItem="Hh9-mW-195" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="top" constant="38" id="Yay-Wr-4Wt"/>
-                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="trailing" secondItem="tVZ-Vy-rET" secondAttribute="trailing" id="a11-W0-VmA"/>
+                                    <constraint firstItem="o1u-rb-NED" firstAttribute="leading" secondItem="GB0-IS-21p" secondAttribute="leading" constant="10" id="mbR-uB-fWx"/>
+                                    <constraint firstAttribute="bottom" secondItem="o1u-rb-NED" secondAttribute="bottom" id="nEm-DV-bVO"/>
                                     <constraint firstAttribute="trailing" secondItem="Hh9-mW-195" secondAttribute="trailing" constant="25" id="rGR-K4-9YZ"/>
-                                    <constraint firstItem="tVZ-Vy-rET" firstAttribute="leading" secondItem="GB0-IS-21p" secondAttribute="leading" constant="10" id="s7X-xx-k7o"/>
                                     <constraint firstAttribute="height" constant="115" id="v0P-FL-qW8"/>
-                                    <constraint firstItem="eeB-FF-h2G" firstAttribute="leading" secondItem="tVZ-Vy-rET" secondAttribute="leading" id="w6H-ea-bAN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -105,12 +120,58 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXa-Jd-dH3" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                <rect key="frame" x="10" y="505" width="105" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-Zk-92T">
+                                <rect key="frame" x="10" y="505" width="373" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBM-Rm-34F" customClass="FoodSelectionView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Cax-a1-D85"/>
+                                            <constraint firstAttribute="width" constant="100" id="uaG-N3-xfR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP1-ed-Spb" customClass="FoodSelectionView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="136.66666666666666" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="63v-1b-zVd"/>
+                                            <constraint firstAttribute="height" constant="50" id="k8b-QN-pSr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-bI-QfQ" customClass="FoodSelectionView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="273" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0ok-xT-qgo"/>
+                                            <constraint firstAttribute="height" constant="50" id="iVS-9x-L3Y"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="3Ux-bJ-Dsy"/>
-                                    <constraint firstAttribute="height" constant="40" id="smW-Dj-ngT"/>
+                                    <constraint firstAttribute="height" constant="50" id="2Bh-d2-VXF"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afx-w8-28L" customClass="ListBurguersView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="10" y="570" width="373" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xiw-lg-KSm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -118,53 +179,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M98-UD-uHq" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                <rect key="frame" x="145" y="505" width="105" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-2V-1iW" customClass="ListBurguersView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="13" y="685" width="370" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="UhJ-sq-gKo"/>
-                                    <constraint firstAttribute="width" constant="105" id="gAk-Wk-mK7"/>
+                                    <constraint firstAttribute="height" constant="100" id="6px-L4-d0c"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZT-Lu-v5p" customClass="LunchYDinnerCollectionViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-                                <rect key="frame" x="280" y="505" width="105" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="2tW-wa-3Q1"/>
-                                    <constraint firstAttribute="height" constant="40" id="Axc-oe-jJb"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kdN-Hq-DE7" firstAttribute="top" secondItem="stU-87-LeA" secondAttribute="bottom" constant="10" id="0BU-jU-W4i"/>
-                            <constraint firstItem="KZT-Lu-v5p" firstAttribute="leading" secondItem="M98-UD-uHq" secondAttribute="trailing" constant="30" id="1b6-NJ-CLP"/>
                             <constraint firstItem="GB0-IS-21p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="2CP-IK-etU"/>
-                            <constraint firstItem="M98-UD-uHq" firstAttribute="centerY" secondItem="nXa-Jd-dH3" secondAttribute="centerY" id="8YR-Zt-DOV"/>
+                            <constraint firstItem="Ksr-2V-1iW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="A59-4T-JKg"/>
+                            <constraint firstItem="Ohb-Zk-92T" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="bottom" constant="15" id="Anv-SS-VqY"/>
                             <constraint firstItem="5gc-Wc-zVn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="CD1-kz-Lhu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="stU-87-LeA" secondAttribute="trailing" id="Maj-dJ-4Oq"/>
-                            <constraint firstItem="KZT-Lu-v5p" firstAttribute="centerY" secondItem="nXa-Jd-dH3" secondAttribute="centerY" id="OGq-eF-B5u"/>
-                            <constraint firstItem="M98-UD-uHq" firstAttribute="leading" secondItem="nXa-Jd-dH3" secondAttribute="trailing" constant="30" id="TAI-73-ONt"/>
+                            <constraint firstItem="Ksr-2V-1iW" firstAttribute="top" secondItem="afx-w8-28L" secondAttribute="bottom" constant="15" id="MeW-Dd-vg3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ksr-2V-1iW" secondAttribute="trailing" constant="10" id="Qaw-1C-puB"/>
+                            <constraint firstItem="afx-w8-28L" firstAttribute="top" secondItem="Ohb-Zk-92T" secondAttribute="bottom" constant="15" id="Uvj-nX-dY2"/>
                             <constraint firstItem="GB0-IS-21p" firstAttribute="top" secondItem="kdN-Hq-DE7" secondAttribute="bottom" constant="10" id="XEj-55-Gm5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GB0-IS-21p" secondAttribute="trailing" constant="10" id="Z8c-Oa-bYw"/>
-                            <constraint firstItem="nXa-Jd-dH3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ZqC-Mo-37D"/>
+                            <constraint firstItem="Ohb-Zk-92T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="bEW-xk-0ug"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kdN-Hq-DE7" secondAttribute="trailing" constant="10" id="d11-d3-HRR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="afx-w8-28L" secondAttribute="trailing" constant="10" id="fg5-Cp-dcz"/>
                             <constraint firstItem="stU-87-LeA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fhn-F8-m5i"/>
                             <constraint firstItem="kdN-Hq-DE7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="flb-NG-2EV"/>
-                            <constraint firstItem="nXa-Jd-dH3" firstAttribute="top" secondItem="GB0-IS-21p" secondAttribute="bottom" constant="15" id="h0q-eI-s4b"/>
                             <constraint firstItem="stU-87-LeA" firstAttribute="top" secondItem="5gc-Wc-zVn" secondAttribute="bottom" constant="10" id="hB0-Qe-hCz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ohb-Zk-92T" secondAttribute="trailing" constant="10" id="k5h-hu-Ad0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5gc-Wc-zVn" secondAttribute="trailing" constant="20" id="lxq-S8-hJU"/>
+                            <constraint firstItem="afx-w8-28L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="y4t-Ra-NFK"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -179,20 +224,32 @@
         <image name="iconoStart" width="8" height="8"/>
         <image name="iconolist" width="8" height="8"/>
         <image name="mackDonaldImage" width="195" height="82"/>
+        <namedColor name="fondotarjeta">
+            <color red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
