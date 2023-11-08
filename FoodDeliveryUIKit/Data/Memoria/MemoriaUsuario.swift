@@ -7,11 +7,6 @@
 
 import Foundation
 
-class Memoria {
+class MemoriaUsuario {
     static var usuario: Array<Usuario> = [Usuario(email: "Luis", password: "1234")]
-}
-
-struct Usuario{
-    let email: String
-    let password: String
 }
