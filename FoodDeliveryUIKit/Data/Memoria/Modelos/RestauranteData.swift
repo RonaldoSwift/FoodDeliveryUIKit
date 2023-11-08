@@ -8,5 +8,9 @@
 import Foundation
 
 struct RestauranteData{
-    var nombre: String
+    let id: Int
+    let name: String
+    let restaurantImage: String
+    let restaurantLogo: String
+    let distance: String
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 class MemoriaUsuario {
-    static var usuario: Array<Usuario> = [Usuario(email: "Luis", password: "1234")]
+    static var usuario: Array<UsuarioData> = [UsuarioData(email: "Luis", password: "1234")]
 }

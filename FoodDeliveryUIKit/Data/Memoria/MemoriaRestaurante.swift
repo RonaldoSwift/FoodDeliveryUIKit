@@ -8,9 +8,8 @@
 import Foundation
 
 class MemoriaRestaurante{
-    var restaurantes : Array<Restaurante> = [Restaurante(nombre: "Harvets"),Restaurante(nombre: "KFC")]
-}
-
-struct Restaurante{
-    var nombre: String
+    var restaurantesData : Array<RestauranteData> = [
+        RestauranteData(id: 0, name: "Restaurante 1", restaurantImage: "", restaurantLogo: "", distance: ""),
+        RestauranteData(id: 1, name: "Restaurante 2", restaurantImage: "", restaurantLogo: "", distance: "")
+    ]
 }

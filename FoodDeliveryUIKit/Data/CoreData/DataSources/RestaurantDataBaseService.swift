@@ -54,6 +54,7 @@ class RestaurantDataBaseService{
                         restaurantEntity.distance = restaurant.distance
                     }
                 }
+                try context.save()
             } catch{
                 print("Error when saving restaurant in the central data: \(error)")
             }

@@ -5,4 +5,11 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="special" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
+    <entity name="RestaurantEntity" representedClassName="RestaurantEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="distance" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="restaurantImage" optional="YES" attributeType="String"/>
+        <attribute name="restaurantLogo" optional="YES" attributeType="String"/>
+    </entity>
 </model>

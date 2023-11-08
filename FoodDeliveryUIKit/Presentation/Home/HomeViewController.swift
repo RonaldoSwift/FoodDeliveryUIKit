@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController {
     
@@ -14,10 +15,28 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var restauranteCollectionView: UICollectionView!
     
     var memoriaCategories = MemoriaCategories()
-    var memoriaRestaurante = MemoriaRestaurante()
+    
+    
+    //Variable Global
+    var resturantes: [Restaurant] = []
+    private var subscriptions = Set<AnyCancellable>()
+
+    
+    let viewModel: HomeViewModel = HomeViewModel(
+        repository: RestaurantRepository(
+            restaurantDataBaseService: RestaurantDataBaseService(
+                persistentContainer: PersistenceController.shared.container
+            ), memoriaRestaurante: MemoriaRestaurante()
+        )
+    )
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBindings()
+        
+        viewModel.getRestaurant()
         
         collectionCategoryView.delegate = self
         collectionCategoryView.dataSource = self
@@ -30,6 +49,19 @@ class HomeViewController: UIViewController {
         
         registerCells()
     }
+    
+    
+    private func setupBindings() {
+        viewModel.$restaurants.sink { (restaurants: [Restaurant]) in
+            if(restaurants.count == 0){
+                self.viewModel.saveRestaurant()
+            }
+            self.resturantes = restaurants
+            self.restauranteCollectionView.reloadData()
+        }.store(in: &subscriptions)
+    }
+    
+    
     
     private func registerCells(){
         let categoryCollectionnCellNib = UINib(nibName: String(describing: CategoryCollectionViewCell.self), bundle: nil)
@@ -56,7 +88,7 @@ extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegat
         } else if(collectionView == burguerCollectionView){
             return 5
         } else if(collectionView == restauranteCollectionView){
-            return memoriaRestaurante.restaurantes.count
+            return resturantes.count
         } else{
             return 0
         }
@@ -76,8 +108,8 @@ extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegat
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RestaurantBrandCollectionViewCell.identificador, for: indexPath) as! RestaurantBrandCollectionViewCell
             
-            cell.nameRestaurantLabel.text = memoriaRestaurante.restaurantes[indexPath.row].nombre
-            
+            cell.nameRestaurantLabel.text = resturantes[indexPath.row].name
+
             return cell
         }
     }
