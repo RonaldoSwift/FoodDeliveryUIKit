@@ -49,7 +49,7 @@ class VerificationViewController: UIViewController {
         let quintoDigito = quintoDigitoTextField.text ?? "Error no se encontro usuario en la memoria"
         let sextoDigito = sextoDigitoTextField.text ?? "Error no se encontro usuario en la memoria"
         
-        let codigoEncontrado = MemoriaCodigoVerificacion.codigo.first { (codigo:Codigo) in
+        let codigoEncontrado = MemoriaCodigoVerificacion.codigo.first { (codigo:CodigoData) in
             codigo.primerDigitoText == primerDigito && codigo.segundoDigitoText == segundoDigito && codigo.tercerDigitoText == tercerDigito && codigo.cuartoDigitoText == cuartoDigito && codigo.quintoDigitoText == quintoDigito && codigo.sextoDigitoText == sextoDigito
         }
         

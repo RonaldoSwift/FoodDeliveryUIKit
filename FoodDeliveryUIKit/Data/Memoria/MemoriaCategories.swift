@@ -8,14 +8,12 @@
 import Foundation
 
 class MemoriaCategories{
-    var categorias: Array<Categoria> = [Categoria(nombre: "Burguer"),
-                                        Categoria(nombre: "Grocery"),
-                                        Categoria(nombre: "Salads"),
-                                        Categoria(nombre: "Sweets"),
-                                        Categoria(nombre: "Utensils"),
-                                        Categoria(nombre: "See all")]
+    var categorias: Array<CategoriaData> = [CategoriaData(nombre: "Burguer"),
+                                        CategoriaData(nombre: "Grocery"),
+                                        CategoriaData(nombre: "Salads"),
+                                        CategoriaData(nombre: "Sweets"),
+                                        CategoriaData(nombre: "Utensils"),
+                                        CategoriaData(nombre: "See all")]
 }
 
-struct Categoria{
-    let nombre: String
-}
+

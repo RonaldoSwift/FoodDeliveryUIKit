@@ -138,7 +138,7 @@ class AutenticationViewController: UIViewController {
     
     
     func startLogin(email: String, password: String) {
-        let usuarioEncontrado = Memoria.usuario.first { (usuario:Usuario) in
+        let usuarioEncontrado = MemoriaUsuario.usuario.first { (usuario:UsuarioData) in
             usuario.email == email && usuario.password == password
         }
         
