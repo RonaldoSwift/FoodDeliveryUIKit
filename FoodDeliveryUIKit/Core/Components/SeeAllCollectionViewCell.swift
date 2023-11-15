@@ -8,6 +8,11 @@
 import UIKit
 
 class SeeAllCollectionViewCell: UICollectionViewCell {
+    
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    static var identificador = "SeeAllCollectionViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

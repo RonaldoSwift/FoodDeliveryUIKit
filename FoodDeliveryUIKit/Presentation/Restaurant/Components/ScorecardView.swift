@@ -7,14 +7,34 @@
 
 import UIKit
 
+@IBDesignable
 class ScorecardView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBOutlet weak var starImageView: UIImageView!
+    @IBOutlet weak var deliveriImageView: UIImageView!
+    @IBOutlet weak var sleccionImageView: UIImageView!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var deliveriLabel: UILabel!
+    @IBOutlet weak var burguerLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        initSubviews()
     }
-    */
-
+    required init?(coder: NSCoder){
+        super.init(coder: coder)
+        initSubviews()
+    }
+    
+    func initSubviews(){
+        let nib = UINib(nibName: String(describing: ScorecardView.self), bundle: nil)
+        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+        else{
+            fatalError("Error")
+        }
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(view)
+    }
 }

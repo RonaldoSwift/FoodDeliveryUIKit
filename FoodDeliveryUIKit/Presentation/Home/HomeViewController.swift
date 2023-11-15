@@ -30,7 +30,6 @@ class HomeViewController: UIViewController {
         )
     )
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +49,6 @@ class HomeViewController: UIViewController {
         registerCells()
     }
     
-    
     private func setupBindings() {
         viewModel.$restaurants.sink { (restaurants: [Restaurant]) in
             if(restaurants.count == 0){
@@ -61,21 +59,28 @@ class HomeViewController: UIViewController {
         }.store(in: &subscriptions)
     }
     
-    
-    
     private func registerCells(){
+        // MARK: - Categoria
         let categoryCollectionnCellNib = UINib(nibName: String(describing: CategoryCollectionViewCell.self), bundle: nil)
         
         collectionCategoryView.register(categoryCollectionnCellNib, forCellWithReuseIdentifier: CategoryCollectionViewCell.identificador)
         
+        let seeAllCollectionnCellNib = UINib(nibName: String(describing: SeeAllCollectionViewCell.self), bundle: nil)
         
+        collectionCategoryView.register(seeAllCollectionnCellNib, forCellWithReuseIdentifier: SeeAllCollectionViewCell.identificador)
+        
+        // MARK: - Burguer
+
         let burguerCollectionViewCellNib = UINib(nibName: String(describing: BurguerCategoryCollectionViewCell.self), bundle: nil)
         
         burguerCollectionView.register(burguerCollectionViewCellNib, forCellWithReuseIdentifier: BurguerCategoryCollectionViewCell.identificador)
         
+        // MARK: - Resturant
+
         let restauranteCollectionViewCellNib = UINib(nibName: String(describing: RestaurantBrandCollectionViewCell.self), bundle: nil)
         
         restauranteCollectionView.register(restauranteCollectionViewCellNib, forCellWithReuseIdentifier: RestaurantBrandCollectionViewCell.identificador)
+        
     }
 }
 
@@ -94,13 +99,25 @@ extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegat
         }
     }
     
+    //Create a function that adds two integers together
+    
+    //Hacer similar, con la nueva celda
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        //See All logica
         if(collectionView == collectionCategoryView){
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identificador, for: indexPath) as! CategoryCollectionViewCell
+            if(memoriaCategories.categorias[indexPath.row].nombre != "See all"){
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identificador, for: indexPath) as! CategoryCollectionViewCell
+                
+                // "cell.imageView
+                cell.descriptionLabel.text = memoriaCategories.categorias[indexPath.row].nombre
+                return cell
+            } else{
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeeAllCollectionViewCell.identificador, for: indexPath) as! SeeAllCollectionViewCell
+                
+                return cell
+            }
             
-            // "cell.imageView
-            cell.descriptionLabel.text = memoriaCategories.categorias[indexPath.row].nombre
-            return cell
         } else if(collectionView == burguerCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BurguerCategoryCollectionViewCell.identificador, for: indexPath) as! BurguerCategoryCollectionViewCell
             
