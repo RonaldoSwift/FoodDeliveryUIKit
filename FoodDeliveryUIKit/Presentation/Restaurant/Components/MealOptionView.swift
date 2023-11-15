@@ -7,14 +7,36 @@
 
 import UIKit
 
+@IBDesignable
 class MealOptionView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    @IBOutlet weak var nombreLabel: UILabel!
+    
+    @IBInspectable
+    var name: String? {
+        didSet{
+            nombreLabel.text = name
+        }
     }
-    */
-
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initSubviews()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        initSubviews()
+    }
+    
+    func initSubviews(){
+        let nib = UINib(nibName: String(describing: MealOptionView.self), bundle: nil)
+        guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+        else{
+            fatalError("Error")
+        }
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(view)
+    }
 }

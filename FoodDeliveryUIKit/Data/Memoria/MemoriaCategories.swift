@@ -15,5 +15,3 @@ class MemoriaCategories{
                                         CategoriaData(nombre: "Utensils"),
                                         CategoriaData(nombre: "See all")]
 }
-
-

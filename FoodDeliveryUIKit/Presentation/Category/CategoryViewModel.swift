@@ -40,8 +40,8 @@ final class CategoryViewModel: ObservableObject {
     
     func saveCategories() {
         let categories: [Category] = [
-            Category(id: 1, title: "Burgers", isEspecial: true),
-            Category(id: 2, title: "Grocery", isEspecial: true),
+            Category(id: 1, title: "Burgers", isEspecial: true, verification: false),
+            Category(id: 2, title: "Grocery", isEspecial: true, verification: false),
         ]
         repository.saveCategories(categories: categories)
     }

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct HamburguerData{
+    let id: Int
+    let title: String
+    let calories: String
+    let oldPrice: String
+    let currentPrice: String
+    let imageBurguer: String
+}
