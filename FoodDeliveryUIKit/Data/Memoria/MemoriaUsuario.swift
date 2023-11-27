@@ -7,6 +7,7 @@
 
 import Foundation
 
+//testing
 class MemoriaUsuario {
     static var usuario: Array<UsuarioData> = [UsuarioData(email: "Luis", password: "1234")]
 }
