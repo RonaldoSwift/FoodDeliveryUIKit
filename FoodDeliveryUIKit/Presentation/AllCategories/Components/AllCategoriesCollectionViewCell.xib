@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,6 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" name="Pink100"/>
                     </stackView>
                 </subviews>
             </view>
@@ -44,6 +46,7 @@
             <size key="customSize" width="212" height="221"/>
             <connections>
                 <outlet property="AllCategorieBurguerImage" destination="RPV-dT-am9" id="DCR-HW-GtF"/>
+                <outlet property="allCategoriesStackView" destination="xla-eF-SUD" id="I9D-i0-Mtm"/>
                 <outlet property="nameLabel" destination="ikO-xW-QQq" id="Pd9-Pf-46n"/>
             </connections>
             <point key="canvasLocation" x="108.3969465648855" y="48.943661971830991"/>
@@ -51,5 +54,8 @@
     </objects>
     <resources>
         <image name="bur" width="84" height="30"/>
+        <namedColor name="Pink100">
+            <color red="0.95686274509803926" green="0.45098039215686275" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

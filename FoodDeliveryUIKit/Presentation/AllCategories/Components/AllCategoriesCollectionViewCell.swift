@@ -9,6 +9,8 @@ import UIKit
 
 class AllCategoriesCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var allCategoriesStackView: UIStackView!
     @IBOutlet weak var AllCategorieBurguerImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -17,5 +19,6 @@ class AllCategoriesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        allCategoriesStackView.layer.cornerRadius = allCategoriesStackView.bounds.height / 2
     }
 }

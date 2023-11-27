@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import Combine
 
-class CategoryOfflineService {
+class CategoryDataBaseService {
     
     let persistentContainer: NSPersistentContainer
     

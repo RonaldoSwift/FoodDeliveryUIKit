@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		248E72F92B1433CA000ACEFB /* HomeViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248E72F82B1433CA000ACEFB /* HomeViewController+Delegate.swift */; };
 		4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */; };
 		4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6392AE0BA210093D86E /* SocialNetwork.swift */; };
 		4927D6402AE18B330093D86E /* CustomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */; };
@@ -39,7 +40,7 @@
 		49CE24512AF20EF0002BFB49 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24502AF20EF0002BFB49 /* Category.swift */; };
 		49CE24542AF2100B002BFB49 /* FoodDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24522AF2100B002BFB49 /* FoodDataBase.xcdatamodeld */; };
 		49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24962AF213FB002BFB49 /* CategoryRepository.swift */; };
-		49CE24992AF21425002BFB49 /* CategoryOfflineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */; };
+		49CE24992AF21425002BFB49 /* CategoryDataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE24982AF21425002BFB49 /* CategoryDataBaseService.swift */; };
 		49CE249C2AF21852002BFB49 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE249B2AF21852002BFB49 /* CategoryViewModel.swift */; };
 		49CE249E2AF21CF6002BFB49 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE249D2AF21CF6002BFB49 /* PersistenceController.swift */; };
 		49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */; };
@@ -156,6 +157,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		248E72F82B1433CA000ACEFB /* HomeViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegate.swift"; sourceTree = "<group>"; };
 		4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4927D6392AE0BA210093D86E /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
@@ -187,7 +189,7 @@
 		49CE24502AF20EF0002BFB49 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		49CE24532AF2100B002BFB49 /* FoodDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodDataBase.xcdatamodel; sourceTree = "<group>"; };
 		49CE24962AF213FB002BFB49 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
-		49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOfflineService.swift; sourceTree = "<group>"; };
+		49CE24982AF21425002BFB49 /* CategoryDataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataBaseService.swift; sourceTree = "<group>"; };
 		49CE249B2AF21852002BFB49 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		49CE249D2AF21CF6002BFB49 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		49D22F542ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -446,7 +448,7 @@
 		49CE249A2AF2182F002BFB49 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				49CE24982AF21425002BFB49 /* CategoryOfflineService.swift */,
+				49CE24982AF21425002BFB49 /* CategoryDataBaseService.swift */,
 				FA4800972AFAE7DE009F2908 /* RestaurantDataBaseService.swift */,
 				FA953D5A2AFD93BC00D74E79 /* HamburguerRestaurantDataBaseService.swift */,
 			);
@@ -459,6 +461,7 @@
 				D15276A32AE1A430008CAE26 /* Home.storyboard */,
 				D15276A52AE1A4BA008CAE26 /* HomeViewController.swift */,
 				FA0BA93F2AFB039B00256304 /* HomeViewModel.swift */,
+				248E72F82B1433CA000ACEFB /* HomeViewController+Delegate.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1018,6 +1021,7 @@
 				D1FA03C72ADF5CF600C41E99 /* MemoriaUsuario.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				FA575F1E2B094AA400767E08 /* AllCategoriesSearchView.swift in Sources */,
+				248E72F92B1433CA000ACEFB /* HomeViewController+Delegate.swift in Sources */,
 				49971E2A2AEC83D30081AAEA /* CircleImageView.swift in Sources */,
 				FA5B0B162B09877300A0DCDE /* EditAddressViewController.swift in Sources */,
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
@@ -1033,7 +1037,7 @@
 				FA57FA042B0526DA00B5A7CF /* SearchViewController.swift in Sources */,
 				D1FA03C02ADF5BFB00C41E99 /* AutenticationViewController.swift in Sources */,
 				49971E2F2AEC87160081AAEA /* DiscoverViewController+Delegate.swift in Sources */,
-				49CE24992AF21425002BFB49 /* CategoryOfflineService.swift in Sources */,
+				49CE24992AF21425002BFB49 /* CategoryDataBaseService.swift in Sources */,
 				49971E262AEC80390081AAEA /* CustomAnnotation.swift in Sources */,
 				FA0BA9432AFB383700256304 /* RestauranteData.swift in Sources */,
 				FA57FA062B05271400B5A7CF /* SearchViewModel.swift in Sources */,
