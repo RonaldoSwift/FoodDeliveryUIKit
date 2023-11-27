@@ -14,24 +14,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var burguerCollectionView: UICollectionView!
     @IBOutlet weak var restauranteCollectionView: UICollectionView!
     
-    
-    
     //Variable Global
-    var resturantes: [Restaurant] = []
     private var subscriptions = Set<AnyCancellable>()
-
-    var categories: [Category] = []
-    
+        
     let viewModel: HomeViewModel = HomeViewModel(
         categoryRepository: CategoryRepository(
             categoryDataBaseService: CategoryDataBaseService(
                 persistentContainer: PersistenceController.shared.container
             )
         ),
+        hamburguerRestaurantRepository: HamburguerRestaurantRepository(
+            memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant())
+        ,
         repository: RestaurantRepository(
             restaurantDataBaseService: RestaurantDataBaseService(
                 persistentContainer: PersistenceController.shared.container
-            ), 
+            ),
             memoriaRestaurante: MemoriaRestaurante()
         )
     )
@@ -44,8 +42,9 @@ class HomeViewController: UIViewController {
         viewModel.saveCategories()
         viewModel.saveRestaurant()
         
-        viewModel.getCategories()
-        viewModel.getRestaurant()
+        viewModel.getCategoriesFromDataBase()
+        viewModel.getHamburguesasFromMemory()
+        viewModel.getRestaurantFromMemory()
         
         collectionCategoryView.delegate = self
         collectionCategoryView.dataSource = self
@@ -60,17 +59,16 @@ class HomeViewController: UIViewController {
     }
     
     private func setupBindings() {
-//        viewModel.$restaurants.sink { (restaurants: [Restaurant]) in
-//            if(restaurants.count == 0){
-//                self.viewModel.saveRestaurant()
-//            }
-//            self.resturantes = restaurants
-//            self.restauranteCollectionView.reloadData()
-//        }.store(in: &subscriptions)
-        
         viewModel.$categories.sink { (categories: [Category]) in
-            self.categories = categories
             self.collectionCategoryView.reloadData()
+        }.store(in: &subscriptions)
+        
+        viewModel.$hamburguesas.sink { (categories: [HamburguerRestaurant]) in
+            self.burguerCollectionView.reloadData()
+        }.store(in: &subscriptions)
+        
+        viewModel.$restaurants.sink { (restaurants: [Restaurant]) in
+            self.restauranteCollectionView.reloadData()
         }.store(in: &subscriptions)
     }
     
@@ -85,13 +83,13 @@ class HomeViewController: UIViewController {
         collectionCategoryView.register(seeAllCollectionnCellNib, forCellWithReuseIdentifier: SeeAllCollectionViewCell.identificador)
         
         // MARK: - Burguer
-
+        
         let burguerCollectionViewCellNib = UINib(nibName: String(describing: BurguerCategoryCollectionViewCell.self), bundle: nil)
         
         burguerCollectionView.register(burguerCollectionViewCellNib, forCellWithReuseIdentifier: BurguerCategoryCollectionViewCell.identificador)
         
         // MARK: - Resturant
-
+        
         let restauranteCollectionViewCellNib = UINib(nibName: String(describing: RestaurantBrandCollectionViewCell.self), bundle: nil)
         
         restauranteCollectionView.register(restauranteCollectionViewCellNib, forCellWithReuseIdentifier: RestaurantBrandCollectionViewCell.identificador)

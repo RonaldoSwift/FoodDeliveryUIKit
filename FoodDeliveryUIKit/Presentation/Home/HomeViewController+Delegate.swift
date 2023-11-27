@@ -13,9 +13,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         if(collectionView == collectionCategoryView){
             return viewModel.categories.count
         } else if(collectionView == burguerCollectionView){
-            return 5
+            return viewModel.hamburguesas.count
         } else if(collectionView == restauranteCollectionView){
-            return resturantes.count
+            return viewModel.restaurants.count
         } else{
             return 0
         }
@@ -43,22 +43,27 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         } else if(collectionView == burguerCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BurguerCategoryCollectionViewCell.identificador, for: indexPath) as! BurguerCategoryCollectionViewCell
             
+            cell.burguerImageView.sd_setImage(
+                with: URL(string: viewModel.hamburguesas[indexPath.row].imageBurguer),
+                placeholderImage: UIImage(named: "Cluster")
+            )
+            
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RestaurantBrandCollectionViewCell.identificador, for: indexPath) as! RestaurantBrandCollectionViewCell
             
-            cell.nameRestaurantLabel.text = resturantes[indexPath.row].name
-
+            cell.nameRestaurantLabel.text = viewModel.restaurants[indexPath.row].name
+            
             return cell
         }
     }
     
-//    MARK: - Click on cells
+    //    MARK: - Click on cells
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if(collectionView == collectionCategoryView) {
-            if(self.viewModel.categories[indexPath.row].title == "See All") {
-                
+            if(self.viewModel.categories[indexPath.row].title == "See all") {
+                performSegue(withIdentifier: "AllCategoriesSegue", sender: nil)
             }
         }
     }

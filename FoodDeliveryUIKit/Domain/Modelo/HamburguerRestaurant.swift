@@ -25,13 +25,4 @@ struct HamburguerRestaurant: Codable, Identifiable{
         self.currentPrice = currentPrice
         self.imageBurguer = imageBurguer
     }
-    
-    init(hamburguerEntity: HamburguerEntity){
-        id = Int(hamburguerEntity.id)
-        title = hamburguerEntity.title ?? ""
-        calories = hamburguerEntity.calories ?? ""
-        oldPrice = hamburguerEntity.oldPrice ?? ""
-        currentPrice = hamburguerEntity.currentPrice ?? ""
-        imageBurguer = hamburguerEntity.imageBurguer ?? ""
-    }
 }

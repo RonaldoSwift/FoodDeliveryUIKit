@@ -10,18 +10,12 @@ import Combine
 
 class HamburguerRestaurantRepository {
     
-    let hamburguerRestaurantDataBaseService: HamburguerRestaurantDataBaseService
     let memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant
     
     var cancelLables = Set<AnyCancellable>()
     
-    init(hamburguerRestaurantDataBaseService: HamburguerRestaurantDataBaseService, memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant) {
-        self.hamburguerRestaurantDataBaseService = hamburguerRestaurantDataBaseService
+    init(memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant) {
         self.memoriaHamburgerRestaurant = memoriaHamburgerRestaurant
-    }
-    
-    func getHamburguerRestaurantFromDataBase() -> AnyPublisher<[HamburguerRestaurant],Error>{
-        return hamburguerRestaurantDataBaseService.getHamburguerRestaurant()
     }
     
     func getHamburguerRestaurantFromMemoria() -> Array<HamburguerRestaurant>{
@@ -36,9 +30,5 @@ class HamburguerRestaurantRepository {
             )
             return hamburguer
         }
-    }
-    
-    func saveHamburguerRestaurants(hamburguerRestaurant: [HamburguerRestaurant]){
-        hamburguerRestaurantDataBaseService.save(hamburguers: hamburguerRestaurant)
     }
 }

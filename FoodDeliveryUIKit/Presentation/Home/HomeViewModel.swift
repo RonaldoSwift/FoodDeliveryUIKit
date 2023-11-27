@@ -11,25 +11,27 @@ import Combine
 final class HomeViewModel: ObservableObject {
     
     let categoryRepository: CategoryRepository
+    let hamburguerRestaurantRepository: HamburguerRestaurantRepository
     let restaurantRepository: RestaurantRepository
     
     //@Publish representa el estado d ela vista
     @Published private(set) var categories: [Category] = []
+    @Published private(set) var hamburguesas: [HamburguerRestaurant] = []
     @Published private(set) var restaurants: [Restaurant] = []
     
     var cancellables = Set<AnyCancellable>()
     
-    init(categoryRepository: CategoryRepository, repository: RestaurantRepository) {
+    init(
+        categoryRepository: CategoryRepository,
+        hamburguerRestaurantRepository: HamburguerRestaurantRepository,
+        repository: RestaurantRepository
+    ) {
         self.categoryRepository = categoryRepository
+        self.hamburguerRestaurantRepository = hamburguerRestaurantRepository
         self.restaurantRepository = repository
     }
     
-    func getRestaurant() {
-        let resturanteDeMoria = restaurantRepository.getRestaurantsFromMemoria()
-        setRestuarant(arryRESTAURANT: resturanteDeMoria)
-    }
-    
-    func getCategories() {
+    func getCategoriesFromDataBase() {
         categoryRepository.getCategoriesFromDatabase()
             .receive(on: DispatchQueue.main)
             .sink { completion in
@@ -45,19 +47,24 @@ final class HomeViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    //Es obligatorio tener un seter para cambiar el estado de la vista
-    private func setRestuarant(arryRESTAURANT: [Restaurant]){
-        restaurants = arryRESTAURANT
+    func getHamburguesasFromMemory() {
+        let hamburguesasDeMoria = hamburguerRestaurantRepository.getHamburguerRestaurantFromMemoria()
+        hamburguesas = hamburguesasDeMoria
+    }
+    
+    func getRestaurantFromMemory() {
+        let resturanteDeMoria = restaurantRepository.getRestaurantsFromMemoria()
+        restaurants = resturanteDeMoria
     }
     
     // Llenado de base de datos
     func saveCategories() {
         let categories: [Category] = [
-            Category(id: 1, title: "CategoryDB1", isEspecial: false, verification: true),
-            Category(id: 2, title: "CategoryDB2", isEspecial: false, verification: true),
-            Category(id: 3, title: "CategoryDB3", isEspecial: false, verification: true),
-            Category(id: 4, title: "CategoryDB4", isEspecial: false, verification: true),
-            Category(id: 5, title: "CategoryDB5", isEspecial: false, verification: true),
+            Category(id: 1, title: "Burgers", isEspecial: false, verification: true),
+            Category(id: 2, title: "Grocery", isEspecial: false, verification: true),
+            Category(id: 3, title: "Salads", isEspecial: false, verification: true),
+            Category(id: 4, title: "Swets", isEspecial: false, verification: true),
+            Category(id: 5, title: "Utensils", isEspecial: false, verification: true),
             Category(id: 6, title: "See all", isEspecial: false, verification: true),
         ]
         categoryRepository.saveCategoriesInDataBase(categories: categories)

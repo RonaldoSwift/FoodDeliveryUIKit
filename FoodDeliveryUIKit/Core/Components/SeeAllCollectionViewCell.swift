@@ -16,7 +16,10 @@ class SeeAllCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        descriptionLabel.layer.borderWidth = 2
+        descriptionLabel.layer.borderColor = UIColor.systemBlue.cgColor
+        let radius: CGFloat = descriptionLabel.bounds.size.width / 2
+        descriptionLabel.layer.cornerRadius = radius
     }
-
 }
