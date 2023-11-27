@@ -16,7 +16,7 @@ class CategoryViewController: UIViewController {
 
     let viewModel: CategoryViewModel = CategoryViewModel(
         repository: CategoryRepository(
-            categoryOfflineService: CategoryOfflineService(
+            categoryDataBaseService: CategoryDataBaseService(
                 persistentContainer: PersistenceController.shared.container
             )
         )

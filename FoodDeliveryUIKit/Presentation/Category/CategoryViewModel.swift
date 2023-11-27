@@ -23,7 +23,7 @@ final class CategoryViewModel: ObservableObject {
     }
     
     func getCategories() {
-        repository.getCategories()
+        repository.getCategoriesFromDatabase()
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -43,7 +43,7 @@ final class CategoryViewModel: ObservableObject {
             Category(id: 1, title: "Burgers", isEspecial: true, verification: false),
             Category(id: 2, title: "Grocery", isEspecial: true, verification: false),
         ]
-        repository.saveCategories(categories: categories)
+        repository.saveCategoriesInDataBase(categories: categories)
     }
     
 }

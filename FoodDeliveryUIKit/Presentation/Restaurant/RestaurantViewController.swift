@@ -17,7 +17,10 @@ class RestaurantViewController: UIViewController {
     var hamburguerRestaurant: [HamburguerRestaurant] = []
     private var subscriptions = Set<AnyCancellable>()
     
-    let viewModel: RestaurantViewModel = RestaurantViewModel(repository: HamburguerRestaurantRepository(hamburguerRestaurantDataBaseService: HamburguerRestaurantDataBaseService(persistentContainer: PersistenceController.shared.container), memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant())
+    let viewModel: RestaurantViewModel = RestaurantViewModel(
+        repository: HamburguerRestaurantRepository(
+            memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant()
+        )
     )
     
     override func viewDidLoad() {
@@ -33,9 +36,6 @@ class RestaurantViewController: UIViewController {
     
     private func setupBindings(){
         viewModel.$hamburguerRestaurant.sink { (hamburguerRestaurant:[HamburguerRestaurant]) in
-            if(hamburguerRestaurant.count == 0){
-                self.viewModel.saveHamburguerRestaurant()
-            }
             self.hamburguerRestaurant = hamburguerRestaurant
             self.hamburguerCollectionView.reloadData()
         }.store(in: &subscriptions)

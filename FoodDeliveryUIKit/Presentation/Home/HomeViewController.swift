@@ -14,19 +14,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var burguerCollectionView: UICollectionView!
     @IBOutlet weak var restauranteCollectionView: UICollectionView!
     
-    var memoriaCategories = MemoriaCategories()
-    
-    
     //Variable Global
-    var resturantes: [Restaurant] = []
     private var subscriptions = Set<AnyCancellable>()
-
-    
+        
     let viewModel: HomeViewModel = HomeViewModel(
+        categoryRepository: CategoryRepository(
+            categoryDataBaseService: CategoryDataBaseService(
+                persistentContainer: PersistenceController.shared.container
+            )
+        ),
+        hamburguerRestaurantRepository: HamburguerRestaurantRepository(
+            memoriaHamburgerRestaurant: MemoriaHamburgerRestaurant())
+        ,
         repository: RestaurantRepository(
             restaurantDataBaseService: RestaurantDataBaseService(
                 persistentContainer: PersistenceController.shared.container
-            ), memoriaRestaurante: MemoriaRestaurante()
+            ),
+            memoriaRestaurante: MemoriaRestaurante()
         )
     )
     
@@ -35,7 +39,12 @@ class HomeViewController: UIViewController {
         
         setupBindings()
         
-        viewModel.getRestaurant()
+        viewModel.saveCategories()
+        viewModel.saveRestaurant()
+        
+        viewModel.getCategoriesFromDataBase()
+        viewModel.getHamburguesasFromMemory()
+        viewModel.getRestaurantFromMemory()
         
         collectionCategoryView.delegate = self
         collectionCategoryView.dataSource = self
@@ -50,11 +59,15 @@ class HomeViewController: UIViewController {
     }
     
     private func setupBindings() {
+        viewModel.$categories.sink { (categories: [Category]) in
+            self.collectionCategoryView.reloadData()
+        }.store(in: &subscriptions)
+        
+        viewModel.$hamburguesas.sink { (categories: [HamburguerRestaurant]) in
+            self.burguerCollectionView.reloadData()
+        }.store(in: &subscriptions)
+        
         viewModel.$restaurants.sink { (restaurants: [Restaurant]) in
-            if(restaurants.count == 0){
-                self.viewModel.saveRestaurant()
-            }
-            self.resturantes = restaurants
             self.restauranteCollectionView.reloadData()
         }.store(in: &subscriptions)
     }
@@ -70,64 +83,16 @@ class HomeViewController: UIViewController {
         collectionCategoryView.register(seeAllCollectionnCellNib, forCellWithReuseIdentifier: SeeAllCollectionViewCell.identificador)
         
         // MARK: - Burguer
-
+        
         let burguerCollectionViewCellNib = UINib(nibName: String(describing: BurguerCategoryCollectionViewCell.self), bundle: nil)
         
         burguerCollectionView.register(burguerCollectionViewCellNib, forCellWithReuseIdentifier: BurguerCategoryCollectionViewCell.identificador)
         
         // MARK: - Resturant
-
+        
         let restauranteCollectionViewCellNib = UINib(nibName: String(describing: RestaurantBrandCollectionViewCell.self), bundle: nil)
         
         restauranteCollectionView.register(restauranteCollectionViewCellNib, forCellWithReuseIdentifier: RestaurantBrandCollectionViewCell.identificador)
         
-    }
-}
-
-
-extension HomeViewController: UICollectionViewDataSource,UICollectionViewDelegate{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if(collectionView == collectionCategoryView){
-            return memoriaCategories.categorias.count
-        } else if(collectionView == burguerCollectionView){
-            return 5
-        } else if(collectionView == restauranteCollectionView){
-            return resturantes.count
-        } else{
-            return 0
-        }
-    }
-    
-    //Create a function that adds two integers together
-    
-    //Hacer similar, con la nueva celda
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        //See All logica
-        if(collectionView == collectionCategoryView){
-            if(memoriaCategories.categorias[indexPath.row].nombre != "See all"){
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identificador, for: indexPath) as! CategoryCollectionViewCell
-                
-                // "cell.imageView
-                cell.descriptionLabel.text = memoriaCategories.categorias[indexPath.row].nombre
-                return cell
-            } else{
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeeAllCollectionViewCell.identificador, for: indexPath) as! SeeAllCollectionViewCell
-                
-                return cell
-            }
-            
-        } else if(collectionView == burguerCollectionView){
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BurguerCategoryCollectionViewCell.identificador, for: indexPath) as! BurguerCategoryCollectionViewCell
-            
-            return cell
-        } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RestaurantBrandCollectionViewCell.identificador, for: indexPath) as! RestaurantBrandCollectionViewCell
-            
-            cell.nameRestaurantLabel.text = resturantes[indexPath.row].name
-
-            return cell
-        }
     }
 }

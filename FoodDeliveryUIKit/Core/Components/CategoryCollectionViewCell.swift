@@ -9,6 +9,7 @@ import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var categoryStackView: UIStackView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -16,5 +17,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        let radius: CGFloat = categoryStackView.bounds.size.width / 2
+        categoryStackView.layer.cornerRadius = radius
+        categoryStackView.clipsToBounds = true
     }
 }

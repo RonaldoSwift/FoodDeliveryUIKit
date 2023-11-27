@@ -15,7 +15,7 @@ class MemoriaHamburgerRestaurant {
             calories: "(400 Cals)",
             oldPrice: "$5.89",
             currentPrice: "$4.59",
-            imageBurguer: ""
+            imageBurguer: "https://uploads.metropoles.com/wp-content/uploads/2022/04/28191903/Hamburguer-Neymar-Arena-Sports-Bar-Dudu-Camargo.jpeg"
         ),
         HamburguerData(
             id: 1,
@@ -23,7 +23,7 @@ class MemoriaHamburgerRestaurant {
             calories: "Sesame Seed buns",
             oldPrice: "$4.89",
             currentPrice: "$3.59",
-            imageBurguer: ""
+            imageBurguer: "https://uploads.metropoles.com/wp-content/uploads/2022/04/28191903/Hamburguer-Neymar-Arena-Sports-Bar-Dudu-Camargo.jpeg"
         )
     ]
 }

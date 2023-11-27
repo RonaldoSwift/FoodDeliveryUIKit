@@ -10,19 +10,19 @@ import Combine
 
 class CategoryRepository {
     
-    let categoryOfflineService: CategoryOfflineService
+    let categoryDataBaseService: CategoryDataBaseService
     var cancellables = Set<AnyCancellable>()
     
-    init(categoryOfflineService: CategoryOfflineService) {
-        self.categoryOfflineService = categoryOfflineService
+    init(categoryDataBaseService: CategoryDataBaseService) {
+        self.categoryDataBaseService = categoryDataBaseService
     }
     
-    func getCategories() -> AnyPublisher<[Category], Error> {
-        return categoryOfflineService.getCategories()
+    func getCategoriesFromDatabase() -> AnyPublisher<[Category], Error> {
+        return categoryDataBaseService.getCategories()
     }
     
-    func saveCategories(categories: [Category]) {
-        categoryOfflineService.save(categories: categories)
+    func saveCategoriesInDataBase(categories: [Category]) {
+        categoryDataBaseService.save(categories: categories)
     }
     
 }

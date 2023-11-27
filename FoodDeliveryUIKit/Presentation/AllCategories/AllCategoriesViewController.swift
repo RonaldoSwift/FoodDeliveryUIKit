@@ -21,9 +21,9 @@ class AllCategoriesViewController: UIViewController {
     }
     
     private func registerCells(){
-        let allCategoriesCollectionViewNib = UINib(nibName: String(describing: AllCategoriesCollectionViewCell.self), bundle: nil)
+        let categoryCollectionViewCellNib = UINib(nibName: String(describing: CategoryCollectionViewCell.self), bundle: nil)
         
-        allCategoriesCellCollectionView.register(allCategoriesCollectionViewNib, forCellWithReuseIdentifier: AllCategoriesCollectionViewCell.identificador)
+        allCategoriesCellCollectionView.register(categoryCollectionViewCellNib, forCellWithReuseIdentifier: CategoryCollectionViewCell.identificador)
     }
 }
 
@@ -37,8 +37,8 @@ extension AllCategoriesViewController: UICollectionViewDataSource, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AllCategoriesCollectionViewCell.identificador, for: indexPath) as!
-        AllCategoriesCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identificador, for: indexPath) as!
+        CategoryCollectionViewCell
         return cell
     }
 }
