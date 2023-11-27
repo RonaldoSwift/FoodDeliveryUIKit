@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Address View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EditAddressNavigationView" id="Y6W-OH-hqX" customClass="EditAddressViewController" customModule="FoodDeliveryUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-aL-Ub7">
+                                <rect key="frame" x="10" y="59" width="373" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFj-7e-lnp" customClass="EditAddressView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+                                <rect key="frame" x="10" y="110" width="373" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mAa-rL-GE1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHu-P4-RPR">
+                                <rect key="frame" x="10" y="180" width="373" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U4-lZ-mTm">
+                                <rect key="frame" x="10" y="758" width="373" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kzT-3X-s1M"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorSearch"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="l" title="Use Current Location">
+                                    <color key="baseBackgroundColor" name="ColorSearch"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PFq-yW-0bc">
+                                <rect key="frame" x="0.0" y="214" width="393" height="534"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SM7-z3-3CD">
+                                    <size key="itemSize" width="370" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g4u-aw-HS9">
+                                        <rect key="frame" x="11.666666666666666" y="0.0" width="370" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zqX-bV-iNr">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eYb-aL-Ub7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="0Hl-nV-Btr"/>
+                            <constraint firstItem="eYb-aL-Ub7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1g7-NQ-tuM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eYb-aL-Ub7" secondAttribute="trailing" constant="10" id="9NT-rQ-TrC"/>
+                            <constraint firstItem="SHu-P4-RPR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="9dB-1c-iu0"/>
+                            <constraint firstItem="PFq-yW-0bc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Dfc-c9-smH"/>
+                            <constraint firstItem="SHu-P4-RPR" firstAttribute="top" secondItem="uFj-7e-lnp" secondAttribute="bottom" constant="20" id="Eag-8e-8dj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0U4-lZ-mTm" secondAttribute="trailing" constant="10" id="Jya-IX-2oj"/>
+                            <constraint firstItem="0U4-lZ-mTm" firstAttribute="top" secondItem="PFq-yW-0bc" secondAttribute="bottom" constant="10" id="MQI-Pu-Fi1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0U4-lZ-mTm" secondAttribute="bottom" id="Mn0-bf-JIN"/>
+                            <constraint firstItem="0U4-lZ-mTm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="eFE-vM-SI9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PFq-yW-0bc" secondAttribute="trailing" id="j4s-gO-RU7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SHu-P4-RPR" secondAttribute="trailing" constant="10" id="lDF-BS-ZO0"/>
+                            <constraint firstItem="uFj-7e-lnp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="mFq-Hk-6zb"/>
+                            <constraint firstItem="PFq-yW-0bc" firstAttribute="top" secondItem="SHu-P4-RPR" secondAttribute="bottom" constant="10" id="pNS-86-2GG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uFj-7e-lnp" secondAttribute="trailing" constant="10" id="wcF-aM-lgw"/>
+                            <constraint firstItem="uFj-7e-lnp" firstAttribute="top" secondItem="eYb-aL-Ub7" secondAttribute="bottom" constant="10" id="za8-xH-MVt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editAddressCollectionView" destination="PFq-yW-0bc" id="mwZ-Di-9bN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.030534351145036" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="l" width="25" height="24"/>
+        <namedColor name="ColorSearch">
+            <color red="0.27058823529411763" green="0.72156862745098038" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -12,6 +12,7 @@ final class HomeViewModel: ObservableObject {
     
     let repository: RestaurantRepository
     
+    //@Publish representa el estado d ela vista
     @Published private(set) var restaurants: [Restaurant] = []
     
     var cancellables = Set<AnyCancellable>()
@@ -36,7 +37,12 @@ final class HomeViewModel: ObservableObject {
          }.store(in: &cancellables)*/
         
         let resturanteDeMoria = repository.getRestaurantsFromMemoria()
-        restaurants = resturanteDeMoria
+        setRestuarant(arryRESTAURANT: resturanteDeMoria)
+    }
+    
+    //Es obligatorio tener un seter para cambiar el estado de la vista
+    private func setRestuarant(arryRESTAURANT: [Restaurant]){
+        restaurants = arryRESTAURANT
     }
     
     func saveRestaurant() {

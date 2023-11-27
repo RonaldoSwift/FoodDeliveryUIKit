@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditAddressView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="editAddressButton" destination="n9p-xO-aEF" id="v23-E4-ozT"/>
+                <outlet property="nombreSearchTextField" destination="d5R-zz-q1U" id="GFt-bH-8f0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jUL-FM-8xy">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="D2h-zW-wNF">
+                    <rect key="frame" x="0.0" y="0.0" width="422" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9p-xO-aEF">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="rjH-4d-X1u"/>
+                            </constraints>
+                            <color key="tintColor" name="ColorSearch"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5R-zz-q1U">
+                            <rect key="frame" x="35" y="0.0" width="387" height="60"/>
+                            <color key="backgroundColor" name="FondoSearch"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="FondoSearch"/>
+            <constraints>
+                <constraint firstItem="D2h-zW-wNF" firstAttribute="leading" secondItem="jUL-FM-8xy" secondAttribute="leading" id="Ekx-P5-CGu"/>
+                <constraint firstAttribute="trailing" secondItem="D2h-zW-wNF" secondAttribute="trailing" id="FMj-vm-zKi"/>
+                <constraint firstItem="D2h-zW-wNF" firstAttribute="top" secondItem="jUL-FM-8xy" secondAttribute="top" id="cek-hz-IIK"/>
+                <constraint firstAttribute="bottom" secondItem="D2h-zW-wNF" secondAttribute="bottom" id="qVG-TK-zHd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6.1068702290076331" y="-270.42253521126764"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <namedColor name="ColorSearch">
+            <color red="0.27058823529411763" green="0.72156862745098038" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FondoSearch">
+            <color red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

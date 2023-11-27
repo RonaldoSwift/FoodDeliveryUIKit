@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SDWebImage
 
 final class RestaurantViewModel: ObservableObject {
     
