@@ -9,37 +9,40 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="FoodCellAbductedTableViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="385" height="89"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="FoodCellAbductedTableViewCell" customModule="FoodDeliveryUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="385" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="385" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fast" translatesAutoresizingMaskIntoConstraints="NO" id="0AU-x0-KHM">
-                        <rect key="frame" x="0.0" y="0.0" width="98" height="89"/>
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Vpc-tL-D6m"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBQ Chicken Burger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAV-nh-Jiu">
-                        <rect key="frame" x="107.99999999999999" y="10.000000000000002" width="211.66666666666663" height="27.666666666666671"/>
+                        <rect key="frame" x="109.99999999999999" y="10.000000000000002" width="211.66666666666663" height="27.666666666666671"/>
                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KFC logo" translatesAutoresizingMaskIntoConstraints="NO" id="6YS-sL-TGM">
-                        <rect key="frame" x="108" y="47.666666666666664" width="30" height="29.999999999999993"/>
+                        <rect key="frame" x="110" y="47.666666666666664" width="30" height="29.999999999999993"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="9Ug-6K-WNp"/>
                             <constraint firstAttribute="height" constant="30" id="NsP-nC-KrI"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwr-bZ-umh">
-                        <rect key="frame" x="148" y="52.333333333333336" width="32" height="21.000000000000007"/>
+                        <rect key="frame" x="150" y="52.333333333333336" width="32" height="21.000000000000007"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdQ-br-CVQ">
-                        <rect key="frame" x="341" y="27" width="44" height="35"/>
+                        <rect key="frame" x="341" y="32.666666666666664" width="44" height="34.999999999999993"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="greaterthan" catalog="system"/>
@@ -60,7 +63,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="hamburguerImage" destination="0AU-x0-KHM" id="sgA-Qy-f4J"/>
+                <outlet property="foodImageView" destination="0AU-x0-KHM" id="sgA-Qy-f4J"/>
                 <outlet property="logoImage" destination="6YS-sL-TGM" id="gdC-Y2-Mfx"/>
                 <outlet property="marcaLabel" destination="Zwr-bZ-umh" id="iSD-Eo-XQq"/>
                 <outlet property="nextButton" destination="rdQ-br-CVQ" id="ecr-fP-zs5"/>
