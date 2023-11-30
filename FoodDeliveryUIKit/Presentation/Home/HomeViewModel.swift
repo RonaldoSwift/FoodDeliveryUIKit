@@ -14,7 +14,7 @@ final class HomeViewModel: ObservableObject {
     let hamburguerRestaurantRepository: HamburguerRestaurantRepository
     let restaurantRepository: RestaurantRepository
     
-    //@Publish representa el estado d ela vista
+    //@Publish representa el estado de la vista
     @Published private(set) var categories: [Category] = []
     @Published private(set) var hamburguesas: [HamburguerRestaurant] = []
     @Published private(set) var restaurants: [Restaurant] = []

@@ -56,7 +56,6 @@
 		D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16AC66D2ADF5F6900DEE9CD /* Verification.storyboard */; };
 		D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16AC66F2AE0643C00DEE9CD /* VerificationViewController.swift */; };
 		D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */; };
-		D191C0472AD7756400B16BCE /* Ejemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191C0462AD7756400B16BCE /* Ejemplo.swift */; };
 		D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381C02AD4F575009D31CC /* AppDelegate.swift */; };
 		D1D381C32AD4F575009D31CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381C22AD4F575009D31CC /* SceneDelegate.swift */; };
 		D1D381C52AD4F575009D31CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D381C42AD4F575009D31CC /* ViewController.swift */; };
@@ -91,8 +90,6 @@
 		FA575EF62B08F35600767E08 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575EF52B08F35600767E08 /* SearchBarView.swift */; };
 		FA575EF82B08FA4D00767E08 /* ResentSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA575EF72B08FA4D00767E08 /* ResentSearchView.xib */; };
 		FA575EFA2B08FA6400767E08 /* ResentSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575EF92B08FA6400767E08 /* ResentSearchView.swift */; };
-		FA575EFD2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575EFB2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.swift */; };
-		FA575EFE2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA575EFC2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.xib */; };
 		FA575F032B09201000767E08 /* Burguer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA575F022B09201000767E08 /* Burguer.storyboard */; };
 		FA575F052B09204200767E08 /* BurguerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F042B09204200767E08 /* BurguerViewController.swift */; };
 		FA575F072B09208800767E08 /* BurguerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F062B09208800767E08 /* BurguerViewModel.swift */; };
@@ -121,6 +118,13 @@
 		FA5BF2502AFC485D006EF351 /* TabSuperiorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF24F2AFC485D006EF351 /* TabSuperiorView.swift */; };
 		FA5BF2542AFC8F87006EF351 /* LikesMacDonaldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF2532AFC8F87006EF351 /* LikesMacDonaldsView.swift */; };
 		FA5BF2562AFC9169006EF351 /* TabSuperiorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5BF2552AFC9169006EF351 /* TabSuperiorView.xib */; };
+		FA6C99122B17F4A60012E7FB /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C99112B17F4A60012E7FB /* SearchRepository.swift */; };
+		FA6C99142B17F7870012E7FB /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C99132B17F7870012E7FB /* Search.swift */; };
+		FA6E9B282B1540960094E292 /* MemoriaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E9B272B1540960094E292 /* MemoriaSearch.swift */; };
+		FA6E9B2A2B1540FC0094E292 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E9B292B1540FC0094E292 /* SearchData.swift */; };
+		FA6E9B482B1586AF0094E292 /* FoodCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E9B462B1586AF0094E292 /* FoodCellTableViewCell.swift */; };
+		FA6E9B492B1586AF0094E292 /* FoodCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E9B472B1586AF0094E292 /* FoodCellTableViewCell.xib */; };
+		FA6E9B4B2B1589310094E292 /* SearchViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E9B4A2B1589310094E292 /* SearchViewController+Delegate.swift */; };
 		FA7C93092AFD1E0E0063237C /* LikesMacDonaldsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7C93082AFD1E0E0063237C /* LikesMacDonaldsView.xib */; };
 		FA7C930B2AFD22850063237C /* ScorecardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7C930A2AFD22850063237C /* ScorecardView.xib */; };
 		FA7C930D2AFD229D0063237C /* ScorecardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C930C2AFD229D0063237C /* ScorecardView.swift */; };
@@ -202,7 +206,6 @@
 		D16AC66D2ADF5F6900DEE9CD /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		D16AC66F2AE0643C00DEE9CD /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaCodigoVerificacion.swift; sourceTree = "<group>"; };
-		D191C0462AD7756400B16BCE /* Ejemplo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejemplo.swift; sourceTree = "<group>"; };
 		D1D381BD2AD4F575009D31CC /* FoodDeliveryUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D381C02AD4F575009D31CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D381C22AD4F575009D31CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,8 +243,6 @@
 		FA575EF52B08F35600767E08 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		FA575EF72B08FA4D00767E08 /* ResentSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResentSearchView.xib; sourceTree = "<group>"; };
 		FA575EF92B08FA6400767E08 /* ResentSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResentSearchView.swift; sourceTree = "<group>"; };
-		FA575EFB2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCellAbductedCollectionViewCell.swift; sourceTree = "<group>"; };
-		FA575EFC2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCellAbductedCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA575F022B09201000767E08 /* Burguer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Burguer.storyboard; sourceTree = "<group>"; };
 		FA575F042B09204200767E08 /* BurguerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurguerViewController.swift; sourceTree = "<group>"; };
 		FA575F062B09208800767E08 /* BurguerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurguerViewModel.swift; sourceTree = "<group>"; };
@@ -270,6 +271,13 @@
 		FA5BF24F2AFC485D006EF351 /* TabSuperiorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSuperiorView.swift; sourceTree = "<group>"; };
 		FA5BF2532AFC8F87006EF351 /* LikesMacDonaldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesMacDonaldsView.swift; sourceTree = "<group>"; };
 		FA5BF2552AFC9169006EF351 /* TabSuperiorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabSuperiorView.xib; sourceTree = "<group>"; };
+		FA6C99112B17F4A60012E7FB /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		FA6C99132B17F7870012E7FB /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		FA6E9B272B1540960094E292 /* MemoriaSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaSearch.swift; sourceTree = "<group>"; };
+		FA6E9B292B1540FC0094E292 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		FA6E9B462B1586AF0094E292 /* FoodCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCellTableViewCell.swift; sourceTree = "<group>"; };
+		FA6E9B472B1586AF0094E292 /* FoodCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCellTableViewCell.xib; sourceTree = "<group>"; };
+		FA6E9B4A2B1589310094E292 /* SearchViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Delegate.swift"; sourceTree = "<group>"; };
 		FA7C93082AFD1E0E0063237C /* LikesMacDonaldsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikesMacDonaldsView.xib; sourceTree = "<group>"; };
 		FA7C930A2AFD22850063237C /* ScorecardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScorecardView.xib; sourceTree = "<group>"; };
 		FA7C930C2AFD229D0063237C /* ScorecardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardView.swift; sourceTree = "<group>"; };
@@ -344,14 +352,6 @@
 				4927D6452AE1A50B0093D86E /* GradientButton.swift */,
 				D15276AD2AE9DB7C008CAE26 /* FilterView.xib */,
 				D15276AF2AE9DC64008CAE26 /* FilterView.swift */,
-				D15276B12AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift */,
-				D15276B22AE9ECF4008CAE26 /* CategoryCollectionViewCell.xib */,
-				D1FCEE882AEC9115000635A0 /* BurguerCategoryCollectionViewCell.swift */,
-				D1FCEE892AEC9115000635A0 /* BurguerCategoryCollectionViewCell.xib */,
-				D1FCEE8C2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift */,
-				D1FCEE8D2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib */,
-				FA99EDB42AFE8C950094F620 /* SeeAllCollectionViewCell.swift */,
-				FA99EDB52AFE8C950094F620 /* SeeAllCollectionViewCell.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 		4983C4DC2ADA2B52002DDDA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FA6E9B452B157D610094E292 /* Cells */,
 				4969E38E2AE0535500E7D00C /* Components */,
 				4983C4DD2ADA2B64002DDDA2 /* Extensions */,
 			);
@@ -435,6 +436,7 @@
 				49CE24962AF213FB002BFB49 /* CategoryRepository.swift */,
 				FA0BA93D2AFB00BD00256304 /* RestaurantRepository.swift */,
 				FA953D5E2AFD9FE100D74E79 /* HamburguerRestaurantRepository.swift */,
+				FA6C99112B17F4A60012E7FB /* SearchRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -484,7 +486,6 @@
 				D1FA03BC2ADF57FF00C41E99 /* Autentication */,
 				4983C4D92AD9AAC6002DDDA2 /* OnBoarding */,
 				D1D381C42AD4F575009D31CC /* ViewController.swift */,
-				D191C0482AD7757B00B16BCE /* App */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -511,11 +512,11 @@
 			isa = PBXGroup;
 			children = (
 				49971E252AEC80390081AAEA /* CustomAnnotation.swift */,
-				D191C0462AD7756400B16BCE /* Ejemplo.swift */,
 				49D22F562ADDEE4A00A3C54C /* OnboardingSlide.swift */,
 				49CE24502AF20EF0002BFB49 /* Category.swift */,
 				FA4800992AFAE9DF009F2908 /* Restaurant.swift */,
 				FA953D5C2AFD957400D74E79 /* HamburguerRestaurant.swift */,
+				FA6C99132B17F7870012E7FB /* Search.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -553,6 +554,7 @@
 		D1D381BF2AD4F575009D31CC /* FoodDeliveryUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D191C0482AD7757B00B16BCE /* App */,
 				4983C4DC2ADA2B52002DDDA2 /* Core */,
 				D1D381C62AD4F575009D31CC /* Main.storyboard */,
 				D1D381CB2AD4F57E009D31CC /* LaunchScreen.storyboard */,
@@ -597,6 +599,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0BA9412AFB382200256304 /* Modelos */,
+				FA6E9B272B1540960094E292 /* MemoriaSearch.swift */,
 				D1FA03C62ADF5CF600C41E99 /* MemoriaUsuario.swift */,
 				D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */,
 				D15276B52AEC89ED008CAE26 /* MemoriaCategories.swift */,
@@ -614,6 +617,7 @@
 				FA0BA9462AFB388200256304 /* CodigoData.swift */,
 				FA0BA9482AFB389500256304 /* UsuarioData.swift */,
 				FA953D582AFD8D5700D74E79 /* HamburguerData.swift */,
+				FA6E9B292B1540FC0094E292 /* SearchData.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -713,10 +717,10 @@
 			isa = PBXGroup;
 			children = (
 				FA57F9FF2B05264600B5A7CF /* Components */,
-				FA57FA002B05264F00B5A7CF /* Cells */,
 				FA57FA012B05269B00B5A7CF /* Search.storyboard */,
 				FA57FA032B0526DA00B5A7CF /* SearchViewController.swift */,
 				FA57FA052B05271400B5A7CF /* SearchViewModel.swift */,
+				FA6E9B4A2B1589310094E292 /* SearchViewController+Delegate.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -732,17 +736,6 @@
 				FA575EF92B08FA6400767E08 /* ResentSearchView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		FA57FA002B05264F00B5A7CF /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				FA575EFB2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.swift */,
-				FA575EFC2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.xib */,
-				FA57D5482B11973000242ACF /* FoodCellAbductedTableViewCell.swift */,
-				FA57D5492B11973000242ACF /* FoodCellAbductedTableViewCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		FA5B0B102B0986D100A0DCDE /* EditAddress */ = {
@@ -773,6 +766,25 @@
 				FA5B0B1E2B098DC600A0DCDE /* EditAddressCollectionViewCell.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FA6E9B452B157D610094E292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA57D5482B11973000242ACF /* FoodCellAbductedTableViewCell.swift */,
+				FA57D5492B11973000242ACF /* FoodCellAbductedTableViewCell.xib */,
+				D15276B12AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift */,
+				D15276B22AE9ECF4008CAE26 /* CategoryCollectionViewCell.xib */,
+				D1FCEE882AEC9115000635A0 /* BurguerCategoryCollectionViewCell.swift */,
+				D1FCEE892AEC9115000635A0 /* BurguerCategoryCollectionViewCell.xib */,
+				D1FCEE8C2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift */,
+				D1FCEE8D2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.xib */,
+				FA99EDB42AFE8C950094F620 /* SeeAllCollectionViewCell.swift */,
+				FA99EDB52AFE8C950094F620 /* SeeAllCollectionViewCell.xib */,
+				FA6E9B462B1586AF0094E292 /* FoodCellTableViewCell.swift */,
+				FA6E9B472B1586AF0094E292 /* FoodCellTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -911,7 +923,6 @@
 				FA57FA022B05269B00B5A7CF /* Search.storyboard in Resources */,
 				49971E222AEC7B190081AAEA /* Discover.storyboard in Resources */,
 				D15276A42AE1A430008CAE26 /* Home.storyboard in Resources */,
-				FA575EFE2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.xib in Resources */,
 				4969E3962AE0A96100E7D00C /* SocialNetworkButtonView.xib in Resources */,
 				D15276AE2AE9DB7C008CAE26 /* FilterView.xib in Resources */,
 				FA5B0B142B09874200A0DCDE /* EditAddress.storyboard in Resources */,
@@ -919,6 +930,7 @@
 				D15276B42AE9ECF4008CAE26 /* CategoryCollectionViewCell.xib in Resources */,
 				FA575F032B09201000767E08 /* Burguer.storyboard in Resources */,
 				FA5BF2442AFC4552006EF351 /* Resturant.storyboard in Resources */,
+				FA6E9B492B1586AF0094E292 /* FoodCellTableViewCell.xib in Resources */,
 				D1D381C82AD4F575009D31CC /* Main.storyboard in Resources */,
 				49971E332AEC8A4B0081AAEA /* CustomClusterAnnotationView.xib in Resources */,
 				FA7C93172AFD3CAD0063237C /* FastFoodCollectionViewCell.xib in Resources */,
@@ -952,7 +964,6 @@
 				49CE24542AF2100B002BFB49 /* FoodDataBase.xcdatamodeld in Sources */,
 				FA5B0B1F2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift in Sources */,
 				D1FCEE932AEC984A000635A0 /* MemoriaRestaurante.swift in Sources */,
-				D191C0472AD7756400B16BCE /* Ejemplo.swift in Sources */,
 				FA0BA9402AFB039B00256304 /* HomeViewModel.swift in Sources */,
 				FA575F142B09471F00767E08 /* AllCategoriesViewModel.swift in Sources */,
 				D1D381C52AD4F575009D31CC /* ViewController.swift in Sources */,
@@ -962,6 +973,7 @@
 				49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */,
 				FA5B0B182B09879D00A0DCDE /* EditAddressViewModel.swift in Sources */,
 				49CE249E2AF21CF6002BFB49 /* PersistenceController.swift in Sources */,
+				FA6C99142B17F7870012E7FB /* Search.swift in Sources */,
 				D15276B32AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
@@ -996,9 +1008,10 @@
 				FA5BF24A2AFC4676006EF351 /* RestaurantViewController.swift in Sources */,
 				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				FA5BF2542AFC8F87006EF351 /* LikesMacDonaldsView.swift in Sources */,
+				FA6E9B4B2B1589310094E292 /* SearchViewController+Delegate.swift in Sources */,
 				FA953D572AFD8CB200D74E79 /* MemoriaHamburgerRestaurant .swift in Sources */,
-				FA575EFD2B0907EE00767E08 /* FoodCellAbductedCollectionViewCell.swift in Sources */,
 				49971E312AEC89370081AAEA /* CustomClusterAnnotationView.swift in Sources */,
+				FA6E9B482B1586AF0094E292 /* FoodCellTableViewCell.swift in Sources */,
 				D1FA03C72ADF5CF600C41E99 /* MemoriaUsuario.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
 				FA575F1E2B094AA400767E08 /* AllCategoriesSearchView.swift in Sources */,
@@ -1008,6 +1021,7 @@
 				49D22F572ADDEE4A00A3C54C /* OnboardingSlide.swift in Sources */,
 				49CE24512AF20EF0002BFB49 /* Category.swift in Sources */,
 				FA7C93162AFD3CAD0063237C /* FastFoodCollectionViewCell.swift in Sources */,
+				FA6E9B2A2B1540FC0094E292 /* SearchData.swift in Sources */,
 				FA575EF22B08EC9D00767E08 /* FilterTicketView.swift in Sources */,
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
 				4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */,
@@ -1024,7 +1038,9 @@
 				FA57FA062B05271400B5A7CF /* SearchViewModel.swift in Sources */,
 				FA7C930D2AFD229D0063237C /* ScorecardView.swift in Sources */,
 				49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */,
+				FA6E9B282B1540960094E292 /* MemoriaSearch.swift in Sources */,
 				4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */,
+				FA6C99122B17F4A60012E7FB /* SearchRepository.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				FA575EFA2B08FA6400767E08 /* ResentSearchView.swift in Sources */,
 				FA575F122B0946F700767E08 /* AllCategoriesViewController.swift in Sources */,

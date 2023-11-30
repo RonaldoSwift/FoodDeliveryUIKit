@@ -10,13 +10,16 @@ import Combine
 
 class HomeViewController: UIViewController {
     
+    
+    @IBOutlet weak var searchTextField: UITextField!
+    
     @IBOutlet weak var collectionCategoryView: UICollectionView!
     @IBOutlet weak var burguerCollectionView: UICollectionView!
     @IBOutlet weak var restauranteCollectionView: UICollectionView!
     
     //Variable Global
     private var subscriptions = Set<AnyCancellable>()
-        
+    
     let viewModel: HomeViewModel = HomeViewModel(
         categoryRepository: CategoryRepository(
             categoryDataBaseService: CategoryDataBaseService(
@@ -36,6 +39,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //searchTextField.isUserInteractionEnabled = false
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(textFieldDidChange))
+        
+        searchTextField.addGestureRecognizer(tapGesture)
+        
         
         setupBindings()
         
@@ -94,5 +103,9 @@ class HomeViewController: UIViewController {
         
         restauranteCollectionView.register(restauranteCollectionViewCellNib, forCellWithReuseIdentifier: RestaurantBrandCollectionViewCell.identificador)
         
+    }
+    
+    @objc func textFieldDidChange() {
+        performSegue(withIdentifier: "SearchSegue", sender: nil)
     }
 }

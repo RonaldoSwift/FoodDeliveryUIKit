@@ -12,8 +12,17 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var fastFoodCelTableView: UITableView!
     
+    private var subscriptions = Set<AnyCancellable>()
+    
+    let viewModel: SearchViewModel = SearchViewModel(searchRepository: SearchRepository(memoriaSearch: MemoriaSearch())
+    )
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBindings()
+        
+        viewModel.getSearchFromMemory()
         
         fastFoodCelTableView.delegate = self
         fastFoodCelTableView.dataSource = self
@@ -22,26 +31,22 @@ class SearchViewController: UIViewController {
         
     }
     
+    private func setupBindings() {
+        viewModel.$searchs.sink { (search: [Search]) in
+            self.fastFoodCelTableView.reloadData()
+        }.store(in: &subscriptions)
+    }
+    
+    
     private func registerCells(){
+        
         let fastFoodTableViewNib = UINib(nibName: String(describing: FoodCellAbductedTableViewCell.self), bundle: nil)
         
-        fastFoodCelTableView.register(fastFoodTableViewNib, forCellReuseIdentifier: FoodCellAbductedTableViewCell.identificador)
-    }
-}
-
-extension SearchViewController: UITableViewDataSource, UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(tableView == fastFoodCelTableView){
-            return 5
-        } else{
-            return 0
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FoodCellAbductedTableViewCell.identificador, for: indexPath) as! FoodCellAbductedTableViewCell
+        let foodTableViewNib = UINib(nibName: String(describing: FoodCellTableViewCell.self), bundle: nil)
         
-        return cell
+        fastFoodCelTableView.register(fastFoodTableViewNib, forCellReuseIdentifier: FoodCellAbductedTableViewCell.identificador)
+        
+        fastFoodCelTableView.register(foodTableViewNib, forCellReuseIdentifier: FoodCellTableViewCell.identificador)
+        
     }
 }

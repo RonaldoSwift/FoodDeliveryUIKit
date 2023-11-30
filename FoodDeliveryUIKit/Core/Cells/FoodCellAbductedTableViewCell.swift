@@ -10,7 +10,7 @@ import UIKit
 @IBDesignable
 class FoodCellAbductedTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var hamburguerImage: UIImageView!
+    @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var marcaLabel: UILabel!
