@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,37 +23,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Rk-JI-xMc">
-                                <rect key="frame" x="0.0" y="129.66666666666669" width="393" height="688.33333333333326"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xxk-o6-LDR">
+                                <rect key="frame" x="0.0" y="114.66666666666669" width="393" height="703.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CUw-TV-9V8">
-                                    <size key="itemSize" width="370" height="100"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4Rk-JI-xMc" firstAttribute="top" secondItem="wrT-Po-BhM" secondAttribute="bottom" constant="30" id="9E0-Qe-H4r"/>
-                            <constraint firstItem="4Rk-JI-xMc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PUT-7X-QGG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4Rk-JI-xMc" secondAttribute="bottom" id="Snx-4f-aGA"/>
+                            <constraint firstItem="xxk-o6-LDR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="L2G-Ub-JTx"/>
+                            <constraint firstItem="xxk-o6-LDR" firstAttribute="top" secondItem="wrT-Po-BhM" secondAttribute="bottom" constant="15" id="Wox-7G-yoU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xxk-o6-LDR" secondAttribute="bottom" id="ZW3-ex-P56"/>
                             <constraint firstItem="wrT-Po-BhM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fUW-oO-ymf"/>
                             <constraint firstItem="wrT-Po-BhM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jbf-af-LeE"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Rk-JI-xMc" secondAttribute="trailing" id="rKw-md-iBS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xxk-o6-LDR" secondAttribute="trailing" id="ma0-AV-rom"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wrT-Po-BhM" secondAttribute="trailing" constant="10" id="w28-0W-VFh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="burguersFasFoodCollectionView" destination="4Rk-JI-xMc" id="1iu-bu-CEE"/>
+                        <outlet property="burguerFastFoodTableView" destination="xxk-o6-LDR" id="c4a-Q7-ckI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-27"/>
+            <point key="canvasLocation" x="-16.030534351145036" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

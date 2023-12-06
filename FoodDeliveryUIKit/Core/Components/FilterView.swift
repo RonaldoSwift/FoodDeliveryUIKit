@@ -11,7 +11,7 @@ import UIKit
 class FilterView: UIView {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var nameView: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     @IBInspectable
@@ -24,7 +24,7 @@ class FilterView: UIView {
     @IBInspectable
     var name: String? {
         didSet{
-            nameView.text = name
+            nameLabel.text = name
         }
     }
     

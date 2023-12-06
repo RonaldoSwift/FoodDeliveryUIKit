@@ -6,39 +6,40 @@
 //
 
 import UIKit
+import Combine
 
 class EditAddressViewController: UIViewController {
     
-    @IBOutlet weak var editAddressCollectionView: UICollectionView!
+    @IBOutlet weak var editAddressTableView: UITableView!
+    
+    private var subscriptions = Set<AnyCancellable>()
+
+    let viewModel: EditAddressViewModel = EditAddressViewModel(editAddressRepository: EditAddressRepository(memoriaEditAdress: MemoriaEditAdress())
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBindings()
+        
+        viewModel.getEditAddressFromMemory()
 
-        editAddressCollectionView.delegate = self
-        editAddressCollectionView.dataSource = self
+        editAddressTableView.delegate = self
+        editAddressTableView.dataSource = self
         
         registerCells()
     }
     
-    private func registerCells(){
-        let editAddressCollectionViewNib = UINib(nibName: String(describing: EditAddressCollectionViewCell.self), bundle: nil)
-        
-        editAddressCollectionView.register(editAddressCollectionViewNib, forCellWithReuseIdentifier: EditAddressCollectionViewCell.identificador)
-    }
-}
-
-extension EditAddressViewController: UICollectionViewDataSource, UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if(collectionView == editAddressCollectionView){
-            return 3
-        } else{
-            return 0
-        }
+    private func setupBindings(){
+        viewModel.$editAddress.sink { (editAddress:[EditAddress]) in
+            self.editAddressTableView.reloadData()
+        }.store(in: &subscriptions)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EditAddressCollectionViewCell.identificador, for: indexPath) as!
-        EditAddressCollectionViewCell
-        return cell
+    private func registerCells(){
+        
+        let editAddressTableViewNib = UINib(nibName: String(describing: EditAddressTableViewCell.self), bundle: nil)
+        
+        editAddressTableView.register(editAddressTableViewNib, forCellReuseIdentifier: EditAddressTableViewCell.identificador)
     }
 }

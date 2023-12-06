@@ -6,3 +6,22 @@
 //
 
 import Foundation
+import Combine
+
+final class EditAddressViewModel: ObservableObject{
+    
+    let editAddressRepository: EditAddressRepository
+    
+    @Published private(set) var editAddress: [EditAddress] = []
+    
+    var cancellables = Set<AnyCancellable>()
+    
+    init(editAddressRepository: EditAddressRepository) {
+        self.editAddressRepository = editAddressRepository
+    }
+    
+    func getEditAddressFromMemory(){
+        let editAddressDeMemoria = editAddressRepository.getEditAddressFromMemoria()
+        editAddress = editAddressDeMemoria
+    }
+}
