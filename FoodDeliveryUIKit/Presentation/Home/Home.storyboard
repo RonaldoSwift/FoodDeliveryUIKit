@@ -184,12 +184,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="z8y-Xr-myq"/>
                     <connections>
+                        <outlet property="addressFilterView" destination="zg0-VJ-5ha" id="lct-Ym-Puq"/>
                         <outlet property="burguerCollectionView" destination="9gB-de-S08" id="WSw-tX-nkd"/>
                         <outlet property="collectionCategoryView" destination="hMV-kL-A29" id="fJz-4A-zQO"/>
                         <outlet property="restauranteCollectionView" destination="xc6-kx-QLL" id="MFD-HO-18S"/>
                         <outlet property="searchTextField" destination="u9f-7l-EEB" id="0UQ-vd-EGY"/>
                         <segue destination="9KD-7r-e2t" kind="show" identifier="AllCategoriesSegue" id="g5T-DK-xkE"/>
                         <segue destination="cZV-Xv-lEM" kind="show" identifier="SearchSegue" id="Vjk-fM-mgR"/>
+                        <segue destination="1DW-xu-n7Y" kind="show" identifier="BurguerSegue" id="Zop-T8-lue"/>
+                        <segue destination="mWF-Ur-iNj" kind="showDetail" identifier="EditAddressSegue" id="uVC-HV-7PS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfp-Rz-SmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -205,6 +208,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2J-Xg-892" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="434" y="-287"/>
+        </scene>
+        <!--Burguer-->
+        <scene sceneID="v4j-MK-rFP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Burguer" id="1DW-xu-n7Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GZg-8J-fFW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvh-Uk-Exs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="-200"/>
+        </scene>
+        <!--EditAddress-->
+        <scene sceneID="cPR-0r-yg3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditAddress" id="mWF-Ur-iNj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uuQ-Y8-MDN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4p-Ly-grj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="-120"/>
         </scene>
         <!--Search-->
         <scene sceneID="QOH-a3-ceh">

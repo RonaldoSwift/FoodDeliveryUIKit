@@ -64,6 +64,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         if(collectionView == collectionCategoryView) {
             if(self.viewModel.categories[indexPath.row].title == "See all") {
                 performSegue(withIdentifier: "AllCategoriesSegue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "BurguerSegue", sender: nil)
             }
         }
     }

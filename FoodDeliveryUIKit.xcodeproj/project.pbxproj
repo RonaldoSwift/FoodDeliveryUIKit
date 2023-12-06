@@ -98,6 +98,11 @@
 		FA0FFD762B0FFD830046AF71 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA0FFD752B0FFD830046AF71 /* SDWebImage */; };
 		FA4800982AFAE7DE009F2908 /* RestaurantDataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4800972AFAE7DE009F2908 /* RestaurantDataBaseService.swift */; };
 		FA48009A2AFAE9DF009F2908 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4800992AFAE9DF009F2908 /* Restaurant.swift */; };
+		FA5725832B1EAB9200EF14F1 /* BurguerViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5725822B1EAB9200EF14F1 /* BurguerViewController+Delegate.swift */; };
+		FA5725872B1EAEDC00EF14F1 /* MemoriaBurguer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5725862B1EAEDC00EF14F1 /* MemoriaBurguer.swift */; };
+		FA5725892B1EAEF400EF14F1 /* BurguerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5725882B1EAEF400EF14F1 /* BurguerData.swift */; };
+		FA57258B2B1EB17300EF14F1 /* BurguerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57258A2B1EB17300EF14F1 /* BurguerRepository.swift */; };
+		FA57258D2B1EB1D100EF14F1 /* Burguer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57258C2B1EB1D100EF14F1 /* Burguer.swift */; };
 		FA575EF02B08EC6C00767E08 /* FilterTicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA575EEF2B08EC6C00767E08 /* FilterTicketView.xib */; };
 		FA575EF22B08EC9D00767E08 /* FilterTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575EF12B08EC9D00767E08 /* FilterTicketView.swift */; };
 		FA575EF42B08F34300767E08 /* SearchBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA575EF32B08F34300767E08 /* SearchBarView.xib */; };
@@ -124,8 +129,6 @@
 		FA5B0B182B09879D00A0DCDE /* EditAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0B172B09879D00A0DCDE /* EditAddressViewModel.swift */; };
 		FA5B0B1A2B098A6D00A0DCDE /* EditAddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5B0B192B098A6D00A0DCDE /* EditAddressView.xib */; };
 		FA5B0B1C2B098B4D00A0DCDE /* EditAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0B1B2B098B4D00A0DCDE /* EditAddressView.swift */; };
-		FA5B0B1F2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0B1D2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift */; };
-		FA5B0B202B098DC600A0DCDE /* EditAddressCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5B0B1E2B098DC600A0DCDE /* EditAddressCollectionViewCell.xib */; };
 		FA5BF2442AFC4552006EF351 /* Resturant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5BF2432AFC4552006EF351 /* Resturant.storyboard */; };
 		FA5BF24A2AFC4676006EF351 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF2492AFC4676006EF351 /* RestaurantViewController.swift */; };
 		FA5BF24C2AFC46BC006EF351 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BF24B2AFC46BC006EF351 /* RestaurantViewModel.swift */; };
@@ -152,6 +155,18 @@
 		FA953D5F2AFD9FE100D74E79 /* HamburguerRestaurantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953D5E2AFD9FE100D74E79 /* HamburguerRestaurantRepository.swift */; };
 		FA99EDB62AFE8C950094F620 /* SeeAllCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99EDB42AFE8C950094F620 /* SeeAllCollectionViewCell.swift */; };
 		FA99EDB72AFE8C950094F620 /* SeeAllCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA99EDB52AFE8C950094F620 /* SeeAllCollectionViewCell.xib */; };
+		FAA586912B1FD41D00E3861A /* EditAddressViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA586902B1FD41D00E3861A /* EditAddressViewController+Delegate.swift */; };
+		FAA586932B1FD47700E3861A /* MemoriaEditAdress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA586922B1FD47700E3861A /* MemoriaEditAdress.swift */; };
+		FAA586952B1FD4A200E3861A /* EditAdressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA586942B1FD4A200E3861A /* EditAdressData.swift */; };
+		FAA586972B1FD81000E3861A /* EditAddressRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA586962B1FD81000E3861A /* EditAddressRepository.swift */; };
+		FAA5869B2B1FD8C100E3861A /* EditAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5869A2B1FD8C100E3861A /* EditAddress.swift */; };
+		FAA5869E2B1FE2C000E3861A /* EditAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5869C2B1FE2C000E3861A /* EditAddressTableViewCell.swift */; };
+		FAA5869F2B1FE2C000E3861A /* EditAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA5869D2B1FE2C000E3861A /* EditAddressTableViewCell.xib */; };
+		FAC31FF42B1F7C810071136C /* MemoriaAllCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC31FF32B1F7C810071136C /* MemoriaAllCategories.swift */; };
+		FAC31FF62B1F7CAD0071136C /* AllCategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC31FF52B1F7CAD0071136C /* AllCategoriesData.swift */; };
+		FAC31FFC2B1F81FF0071136C /* AllCategorieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC31FFB2B1F81FF0071136C /* AllCategorieRepository.swift */; };
+		FAC31FFE2B1F822C0071136C /* AllCategorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC31FFD2B1F822C0071136C /* AllCategorie.swift */; };
+		FAC320002B1F84B30071136C /* AllCategoriesViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC31FFF2B1F84B30071136C /* AllCategoriesViewController+Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +280,11 @@
 		FA0BA9482AFB389500256304 /* UsuarioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioData.swift; sourceTree = "<group>"; };
 		FA4800972AFAE7DE009F2908 /* RestaurantDataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataBaseService.swift; sourceTree = "<group>"; };
 		FA4800992AFAE9DF009F2908 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FA5725822B1EAB9200EF14F1 /* BurguerViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BurguerViewController+Delegate.swift"; sourceTree = "<group>"; };
+		FA5725862B1EAEDC00EF14F1 /* MemoriaBurguer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaBurguer.swift; sourceTree = "<group>"; };
+		FA5725882B1EAEF400EF14F1 /* BurguerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurguerData.swift; sourceTree = "<group>"; };
+		FA57258A2B1EB17300EF14F1 /* BurguerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurguerRepository.swift; sourceTree = "<group>"; };
+		FA57258C2B1EB1D100EF14F1 /* Burguer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burguer.swift; sourceTree = "<group>"; };
 		FA575EEF2B08EC6C00767E08 /* FilterTicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTicketView.xib; sourceTree = "<group>"; };
 		FA575EF12B08EC9D00767E08 /* FilterTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTicketView.swift; sourceTree = "<group>"; };
 		FA575EF32B08F34300767E08 /* SearchBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarView.xib; sourceTree = "<group>"; };
@@ -291,8 +311,6 @@
 		FA5B0B172B09879D00A0DCDE /* EditAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressViewModel.swift; sourceTree = "<group>"; };
 		FA5B0B192B098A6D00A0DCDE /* EditAddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddressView.xib; sourceTree = "<group>"; };
 		FA5B0B1B2B098B4D00A0DCDE /* EditAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressView.swift; sourceTree = "<group>"; };
-		FA5B0B1D2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressCollectionViewCell.swift; sourceTree = "<group>"; };
-		FA5B0B1E2B098DC600A0DCDE /* EditAddressCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddressCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA5BF2432AFC4552006EF351 /* Resturant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Resturant.storyboard; sourceTree = "<group>"; };
 		FA5BF2492AFC4676006EF351 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		FA5BF24B2AFC46BC006EF351 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
@@ -319,6 +337,18 @@
 		FA953D5E2AFD9FE100D74E79 /* HamburguerRestaurantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburguerRestaurantRepository.swift; sourceTree = "<group>"; };
 		FA99EDB42AFE8C950094F620 /* SeeAllCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA99EDB52AFE8C950094F620 /* SeeAllCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeAllCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAA586902B1FD41D00E3861A /* EditAddressViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditAddressViewController+Delegate.swift"; sourceTree = "<group>"; };
+		FAA586922B1FD47700E3861A /* MemoriaEditAdress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaEditAdress.swift; sourceTree = "<group>"; };
+		FAA586942B1FD4A200E3861A /* EditAdressData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAdressData.swift; sourceTree = "<group>"; };
+		FAA586962B1FD81000E3861A /* EditAddressRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressRepository.swift; sourceTree = "<group>"; };
+		FAA5869A2B1FD8C100E3861A /* EditAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddress.swift; sourceTree = "<group>"; };
+		FAA5869C2B1FE2C000E3861A /* EditAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddressTableViewCell.swift; sourceTree = "<group>"; };
+		FAA5869D2B1FE2C000E3861A /* EditAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddressTableViewCell.xib; sourceTree = "<group>"; };
+		FAC31FF32B1F7C810071136C /* MemoriaAllCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaAllCategories.swift; sourceTree = "<group>"; };
+		FAC31FF52B1F7CAD0071136C /* AllCategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesData.swift; sourceTree = "<group>"; };
+		FAC31FFB2B1F81FF0071136C /* AllCategorieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategorieRepository.swift; sourceTree = "<group>"; };
+		FAC31FFD2B1F822C0071136C /* AllCategorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategorie.swift; sourceTree = "<group>"; };
+		FAC31FFF2B1F84B30071136C /* AllCategoriesViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AllCategoriesViewController+Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,6 +539,9 @@
 				FA0BA93D2AFB00BD00256304 /* RestaurantRepository.swift */,
 				FA953D5E2AFD9FE100D74E79 /* HamburguerRestaurantRepository.swift */,
 				FA6C99112B17F4A60012E7FB /* SearchRepository.swift */,
+				FA57258A2B1EB17300EF14F1 /* BurguerRepository.swift */,
+				FAC31FFB2B1F81FF0071136C /* AllCategorieRepository.swift */,
+				FAA586962B1FD81000E3861A /* EditAddressRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -591,6 +624,9 @@
 				FA4800992AFAE9DF009F2908 /* Restaurant.swift */,
 				FA953D5C2AFD957400D74E79 /* HamburguerRestaurant.swift */,
 				FA6C99132B17F7870012E7FB /* Search.swift */,
+				FA57258C2B1EB1D100EF14F1 /* Burguer.swift */,
+				FAC31FFD2B1F822C0071136C /* AllCategorie.swift */,
+				FAA5869A2B1FD8C100E3861A /* EditAddress.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -673,12 +709,15 @@
 			isa = PBXGroup;
 			children = (
 				FA0BA9412AFB382200256304 /* Modelos */,
+				FAC31FF32B1F7C810071136C /* MemoriaAllCategories.swift */,
 				FA6E9B272B1540960094E292 /* MemoriaSearch.swift */,
 				D1FA03C62ADF5CF600C41E99 /* MemoriaUsuario.swift */,
 				D16BDE852AE0BC6100A160A5 /* MemoriaCodigoVerificacion.swift */,
 				D15276B52AEC89ED008CAE26 /* MemoriaCategories.swift */,
 				D1FCEE922AEC984A000635A0 /* MemoriaRestaurante.swift */,
 				FA953D562AFD8CB200D74E79 /* MemoriaHamburgerRestaurant .swift */,
+				FA5725862B1EAEDC00EF14F1 /* MemoriaBurguer.swift */,
+				FAA586922B1FD47700E3861A /* MemoriaEditAdress.swift */,
 			);
 			path = Memoria;
 			sourceTree = "<group>";
@@ -692,6 +731,9 @@
 				FA0BA9482AFB389500256304 /* UsuarioData.swift */,
 				FA953D582AFD8D5700D74E79 /* HamburguerData.swift */,
 				FA6E9B292B1540FC0094E292 /* SearchData.swift */,
+				FA5725882B1EAEF400EF14F1 /* BurguerData.swift */,
+				FAC31FF52B1F7CAD0071136C /* AllCategoriesData.swift */,
+				FAA586942B1FD4A200E3861A /* EditAdressData.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -747,6 +789,7 @@
 				FA575F022B09201000767E08 /* Burguer.storyboard */,
 				FA575F042B09204200767E08 /* BurguerViewController.swift */,
 				FA575F062B09208800767E08 /* BurguerViewModel.swift */,
+				FA5725822B1EAB9200EF14F1 /* BurguerViewController+Delegate.swift */,
 			);
 			path = Burguer;
 			sourceTree = "<group>";
@@ -774,6 +817,7 @@
 				FA575F0F2B09469200767E08 /* AllCategories.storyboard */,
 				FA575F112B0946F700767E08 /* AllCategoriesViewController.swift */,
 				FA575F132B09471F00767E08 /* AllCategoriesViewModel.swift */,
+				FAC31FFF2B1F84B30071136C /* AllCategoriesViewController+Delegate.swift */,
 			);
 			path = AllCategories;
 			sourceTree = "<group>";
@@ -820,6 +864,7 @@
 				FA5B0B132B09874200A0DCDE /* EditAddress.storyboard */,
 				FA5B0B152B09877300A0DCDE /* EditAddressViewController.swift */,
 				FA5B0B172B09879D00A0DCDE /* EditAddressViewModel.swift */,
+				FAA586902B1FD41D00E3861A /* EditAddressViewController+Delegate.swift */,
 			);
 			path = EditAddress;
 			sourceTree = "<group>";
@@ -836,8 +881,8 @@
 		FA5B0B122B0986FF00A0DCDE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FA5B0B1D2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift */,
-				FA5B0B1E2B098DC600A0DCDE /* EditAddressCollectionViewCell.xib */,
+				FAA5869C2B1FE2C000E3861A /* EditAddressTableViewCell.swift */,
+				FAA5869D2B1FE2C000E3861A /* EditAddressTableViewCell.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -977,6 +1022,7 @@
 				FA99EDB72AFE8C950094F620 /* SeeAllCollectionViewCell.xib in Resources */,
 				4964D3102AED6E8300089439 /* DiscoverCollectionViewCell.xib in Resources */,
 				49CE244A2AF20398002BFB49 /* Category.storyboard in Resources */,
+				FAA5869F2B1FE2C000E3861A /* EditAddressTableViewCell.xib in Resources */,
 				FA575EF42B08F34300767E08 /* SearchBarView.xib in Resources */,
 				FA57D54B2B11973000242ACF /* FoodCellAbductedTableViewCell.xib in Resources */,
 				2427D4FD2B19686C008047B2 /* OrderTableViewCell.xib in Resources */,
@@ -990,7 +1036,6 @@
 				D16AC66E2ADF5F6900DEE9CD /* Verification.storyboard in Resources */,
 				FA575EF82B08FA4D00767E08 /* ResentSearchView.xib in Resources */,
 				FA5BF2562AFC9169006EF351 /* TabSuperiorView.xib in Resources */,
-				FA5B0B202B098DC600A0DCDE /* EditAddressCollectionViewCell.xib in Resources */,
 				D1D381CA2AD4F57E009D31CC /* Assets.xcassets in Resources */,
 				FA575F102B09469200767E08 /* AllCategories.storyboard in Resources */,
 				FA575F222B094AC400767E08 /* AllCategoriesSearchView.xib in Resources */,
@@ -1038,7 +1083,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CE24542AF2100B002BFB49 /* FoodDataBase.xcdatamodeld in Sources */,
-				FA5B0B1F2B098DC600A0DCDE /* EditAddressCollectionViewCell.swift in Sources */,
 				D1FCEE932AEC984A000635A0 /* MemoriaRestaurante.swift in Sources */,
 				FA0BA9402AFB039B00256304 /* HomeViewModel.swift in Sources */,
 				FA575F142B09471F00767E08 /* AllCategoriesViewModel.swift in Sources */,
@@ -1048,6 +1092,7 @@
 				D15276A62AE1A4BA008CAE26 /* HomeViewController.swift in Sources */,
 				4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */,
 				49D22F552ADDED1E00A3C54C /* OnboardingCollectionViewCell.swift in Sources */,
+				FA57258B2B1EB17300EF14F1 /* BurguerRepository.swift in Sources */,
 				2427D4F42B1967DD008047B2 /* OrdersViewController.swift in Sources */,
 				FA5B0B182B09879D00A0DCDE /* EditAddressViewModel.swift in Sources */,
 				24A8C80D2B1AFC5B00AEBAB8 /* OrderStatus.swift in Sources */,
@@ -1055,13 +1100,16 @@
 				FA6C99142B17F7870012E7FB /* Search.swift in Sources */,
 				D15276B32AE9ECF4008CAE26 /* CategoryCollectionViewCell.swift in Sources */,
 				4983C4DB2ADA27D8002DDDA2 /* OnBoardingViewController.swift in Sources */,
+				FAA586912B1FD41D00E3861A /* EditAddressViewController+Delegate.swift in Sources */,
 				2427D4F62B1967EF008047B2 /* OrdersViewController+Delegate.swift in Sources */,
 				4983C4E12ADA2CAD002DDDA2 /* UIButton+Extension.swift in Sources */,
 				49971E242AEC7BBD0081AAEA /* DiscoverViewController.swift in Sources */,
 				FA575F072B09208800767E08 /* BurguerViewModel.swift in Sources */,
 				49971E282AEC82E60081AAEA /* CustomAnnotationView.swift in Sources */,
+				FAC31FFC2B1F81FF0071136C /* AllCategorieRepository.swift in Sources */,
 				D15276B02AE9DC64008CAE26 /* FilterView.swift in Sources */,
 				4927D6462AE1A50B0093D86E /* GradientButton.swift in Sources */,
+				FAA586952B1FD4A200E3861A /* EditAdressData.swift in Sources */,
 				FA0BA9452AFB386900256304 /* CategoriaData.swift in Sources */,
 				FA953D592AFD8D5700D74E79 /* HamburguerData.swift in Sources */,
 				4964D31A2AEE05E700089439 /* GalleryVC+Delegate.swift in Sources */,
@@ -1070,6 +1118,7 @@
 				D1FCEE8E2AEC959E000635A0 /* RestaurantBrandCollectionViewCell.swift in Sources */,
 				D1D381C12AD4F575009D31CC /* AppDelegate.swift in Sources */,
 				FA0BA9472AFB388200256304 /* CodigoData.swift in Sources */,
+				FAA5869E2B1FE2C000E3861A /* EditAddressTableViewCell.swift in Sources */,
 				FA575F0A2B0921B100767E08 /* BurguersCollectionViewCell.swift in Sources */,
 				24A8C80F2B1AFE5800AEBAB8 /* OrderItem.swift in Sources */,
 				FA48009A2AFAE9DF009F2908 /* Restaurant.swift in Sources */,
@@ -1077,6 +1126,7 @@
 				24A8C8162B1E294200AEBAB8 /* DateUtils.swift in Sources */,
 				4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */,
 				FA5BF2502AFC485D006EF351 /* TabSuperiorView.swift in Sources */,
+				FAA586932B1FD47700E3861A /* MemoriaEditAdress.swift in Sources */,
 				4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */,
 				FA99EDB62AFE8C950094F620 /* SeeAllCollectionViewCell.swift in Sources */,
 				D15276B62AEC89ED008CAE26 /* MemoriaCategories.swift in Sources */,
@@ -1084,17 +1134,24 @@
 				FA5B0B1C2B098B4D00A0DCDE /* EditAddressView.swift in Sources */,
 				49CE244C2AF203B1002BFB49 /* CategoryViewController.swift in Sources */,
 				FA575F052B09204200767E08 /* BurguerViewController.swift in Sources */,
+				FAC320002B1F84B30071136C /* AllCategoriesViewController+Delegate.swift in Sources */,
+				FAC31FFE2B1F822C0071136C /* AllCategorie.swift in Sources */,
 				FA953D5D2AFD957400D74E79 /* HamburguerRestaurant.swift in Sources */,
 				FA7C93112AFD3BF10063237C /* MealOptionView.swift in Sources */,
+				FAC31FF42B1F7C810071136C /* MemoriaAllCategories.swift in Sources */,
+				FA5725872B1EAEDC00EF14F1 /* MemoriaBurguer.swift in Sources */,
 				49CE244F2AF20520002BFB49 /* CategoryVC+Delegate.swift in Sources */,
 				4969E3982AE0A98500E7D00C /* SocialNetworkButtonView.swift in Sources */,
 				FA575EF62B08F35600767E08 /* SearchBarView.swift in Sources */,
 				FA5BF24A2AFC4676006EF351 /* RestaurantViewController.swift in Sources */,
+				FA57258D2B1EB1D100EF14F1 /* Burguer.swift in Sources */,
 				D16BDE862AE0BC6200A160A5 /* MemoriaCodigoVerificacion.swift in Sources */,
 				FA5BF2542AFC8F87006EF351 /* LikesMacDonaldsView.swift in Sources */,
+				FAA5869B2B1FD8C100E3861A /* EditAddress.swift in Sources */,
 				FA6E9B4B2B1589310094E292 /* SearchViewController+Delegate.swift in Sources */,
 				FA953D572AFD8CB200D74E79 /* MemoriaHamburgerRestaurant .swift in Sources */,
 				49971E312AEC89370081AAEA /* CustomClusterAnnotationView.swift in Sources */,
+				FAA586972B1FD81000E3861A /* EditAddressRepository.swift in Sources */,
 				FA6E9B482B1586AF0094E292 /* FoodCellTableViewCell.swift in Sources */,
 				D1FA03C72ADF5CF600C41E99 /* MemoriaUsuario.swift in Sources */,
 				D16AC6702AE0643D00DEE9CD /* VerificationViewController.swift in Sources */,
@@ -1110,6 +1167,7 @@
 				FA6E9B2A2B1540FC0094E292 /* SearchData.swift in Sources */,
 				FA575EF22B08EC9D00767E08 /* FilterTicketView.swift in Sources */,
 				4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */,
+				FAC31FF62B1F7CAD0071136C /* AllCategoriesData.swift in Sources */,
 				24A8C8042B1AF05100AEBAB8 /* Order.swift in Sources */,
 				4927D6442AE191190093D86E /* PaddingLabel.swift in Sources */,
 				FA5BF24C2AFC46BC006EF351 /* RestaurantViewModel.swift in Sources */,
@@ -1122,6 +1180,7 @@
 				49CE24992AF21425002BFB49 /* CategoryDataBaseService.swift in Sources */,
 				49971E262AEC80390081AAEA /* CustomAnnotation.swift in Sources */,
 				FA0BA9432AFB383700256304 /* RestauranteData.swift in Sources */,
+				FA5725892B1EAEF400EF14F1 /* BurguerData.swift in Sources */,
 				FA57FA062B05271400B5A7CF /* SearchViewModel.swift in Sources */,
 				FA7C930D2AFD229D0063237C /* ScorecardView.swift in Sources */,
 				49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */,
@@ -1130,6 +1189,7 @@
 				24A8C8132B1E23E000AEBAB8 /* Date+Extension.swift in Sources */,
 				FA6C99122B17F4A60012E7FB /* SearchRepository.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
+				FA5725832B1EAB9200EF14F1 /* BurguerViewController+Delegate.swift in Sources */,
 				FA575EFA2B08FA6400767E08 /* ResentSearchView.swift in Sources */,
 				FA575F122B0946F700767E08 /* AllCategoriesViewController.swift in Sources */,
 				FA0BA9492AFB389500256304 /* UsuarioData.swift in Sources */,

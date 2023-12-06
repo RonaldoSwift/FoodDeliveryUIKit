@@ -6,40 +6,45 @@
 //
 
 import UIKit
+import Combine
 
 class BurguerViewController: UIViewController {
     
-    @IBOutlet weak var burguersFasFoodCollectionView: UICollectionView!
+    @IBOutlet weak var burguerFastFoodTableView: UITableView!
+    
+    private var subscriptions = Set<AnyCancellable>()
+    
+    let viewModel: BurguerViewModel = BurguerViewModel(burguerRepository: BurguerRepository(memoriaBurguer: MemoriaBurguer())
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        burguersFasFoodCollectionView.delegate = self
-        burguersFasFoodCollectionView.dataSource = self
+        setupBindings()
+        
+        viewModel.getBurguerFromMemory()
+        
+        burguerFastFoodTableView.delegate = self
+        burguerFastFoodTableView.dataSource = self
         
         registerCells()
     }
     
+    private func setupBindings() {
+        viewModel.$burguers.sink { (burguer: [Burguer]) in
+            self.burguerFastFoodTableView.reloadData()
+        }.store(in: &subscriptions)
+    }
+    
+    
     private func registerCells(){
-        let burguerCollectionViewNib = UINib(nibName: String(describing: BurguersCollectionViewCell.self), bundle: nil)
+        let burguerCollectionViewNib = UINib(nibName: String(describing: FoodCellAbductedTableViewCell.self), bundle: nil)
         
-        burguersFasFoodCollectionView.register(burguerCollectionViewNib, forCellWithReuseIdentifier: BurguersCollectionViewCell.identificador)
-    }
-}
-
-extension BurguerViewController: UICollectionViewDataSource, UICollectionViewDelegate{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if(collectionView == burguersFasFoodCollectionView){
-            return 10
-        } else{
-            return 0
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BurguersCollectionViewCell.identificador, for: indexPath) as!
-        BurguersCollectionViewCell
-        return cell
+        let burguerTableViewNib = UINib(nibName: String(describing: FoodCellTableViewCell.self), bundle: nil)
+        
+        burguerFastFoodTableView.register(burguerCollectionViewNib, forCellReuseIdentifier: FoodCellAbductedTableViewCell.identificador)
+        
+        burguerFastFoodTableView.register(burguerTableViewNib, forCellReuseIdentifier: FoodCellTableViewCell.identificador)
+        
     }
 }

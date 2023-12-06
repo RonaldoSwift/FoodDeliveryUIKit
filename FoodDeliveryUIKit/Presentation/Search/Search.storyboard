@@ -26,11 +26,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5u-bK-qDo" customClass="FilterTicketView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
                                 <rect key="frame" x="257" y="59" width="126" height="41"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oz1-u9-Hlk" customClass="SearchBarView" customModule="FoodDeliveryUIKit" customModuleProvider="target">
                                 <rect key="frame" x="10" y="115" width="373" height="58"/>

@@ -10,8 +10,9 @@ import Combine
 
 class HomeViewController: UIViewController {
     
-    
     @IBOutlet weak var searchTextField: UITextField!
+    
+    @IBOutlet weak var addressFilterView: FilterView!
     
     @IBOutlet weak var collectionCategoryView: UICollectionView!
     @IBOutlet weak var burguerCollectionView: UICollectionView!
@@ -42,8 +43,10 @@ class HomeViewController: UIViewController {
         
         //searchTextField.isUserInteractionEnabled = false
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(textFieldDidChange))
-        
         searchTextField.addGestureRecognizer(tapGesture)
+        
+        let tabGestureAddress = UITapGestureRecognizer(target: self, action: #selector(clickInAddressFilterView))
+        addressFilterView.addGestureRecognizer(tabGestureAddress)
         
         
         setupBindings()
@@ -105,7 +108,12 @@ class HomeViewController: UIViewController {
         
     }
     
+    //Click en cualquier vista objct
     @objc func textFieldDidChange() {
         performSegue(withIdentifier: "SearchSegue", sender: nil)
+    }
+    
+    @objc func clickInAddressFilterView() {
+        performSegue(withIdentifier: "EditAddressSegue", sender: nil)
     }
 }
