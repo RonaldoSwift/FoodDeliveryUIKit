@@ -522,14 +522,6 @@
 			path = DataSources;
 			sourceTree = "<group>";
 		};
-		79BCA21B1BCEDCE307623F75 /* xcschemes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = xcschemes;
-			path = FoodDeliveryUIKit.xcodeproj/project.xcworkspace/xcuserdata/cl.vargas.xcuserdatad/xcschemes;
-			sourceTree = "<group>";
-		};
 		D15276A22AE1A408008CAE26 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,7 +612,6 @@
 				D1D381E02AD4F57F009D31CC /* FoodDeliveryUIKitUITests */,
 				D1D381BE2AD4F575009D31CC /* Products */,
 				FA0FFD742B0FFD830046AF71 /* Frameworks */,
-				79BCA21B1BCEDCE307623F75 /* xcschemes */,
 			);
 			sourceTree = "<group>";
 		};
