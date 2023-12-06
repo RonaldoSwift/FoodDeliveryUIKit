@@ -6,13 +6,40 @@
 //
 
 import UIKit
+import Combine
 
 class OrdersViewController: UIViewController {
 
+    
+    @IBOutlet weak var orderTableView: UITableView!
+    
+    let viewModel = OrdersViewModel()
+    
+    //Variable Global
+    private var subscriptions = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        orderTableView.delegate = self
+        orderTableView.dataSource = self
+        
+        setupBindings()
+        
+        registerCells()
+    }
+    
+    private func setupBindings() {
+        viewModel.$orders.sink { (orders: [Order]) in
+            self.orderTableView.reloadData()
+        }.store(in: &subscriptions)
+    }
+    
+    private func registerCells(){
+        
+        let orderTableViewCellNib = UINib(nibName: String(describing: OrderTableViewCell.self), bundle: nil)
+        orderTableView.register(orderTableViewCellNib, forCellReuseIdentifier: OrderTableViewCell.identificador)
+        
     }
     
 

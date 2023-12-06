@@ -8,7 +8,8 @@
 import Foundation
 
 struct Product {
-    private var id: Int
-    private var name: String
-    private var cost: Double
+    var id: Int
+    var name: String
+    var cost: Double
+    var image: String
 }

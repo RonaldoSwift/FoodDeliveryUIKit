@@ -8,7 +8,14 @@
 import UIKit
 
 class OrderTableViewCell: UITableViewCell {
-
+    
+    static var identificador : String = "OrderTableViewCell"
+    
+    @IBOutlet weak var orderImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

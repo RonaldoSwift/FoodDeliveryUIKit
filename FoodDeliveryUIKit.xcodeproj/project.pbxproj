@@ -19,6 +19,9 @@
 		24A8C80B2B1AFC4600AEBAB8 /* PaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C80A2B1AFC4600AEBAB8 /* PaymentType.swift */; };
 		24A8C80D2B1AFC5B00AEBAB8 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C80C2B1AFC5B00AEBAB8 /* OrderStatus.swift */; };
 		24A8C80F2B1AFE5800AEBAB8 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C80E2B1AFE5800AEBAB8 /* OrderItem.swift */; };
+		24A8C8112B1E1EC500AEBAB8 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C8102B1E1EC500AEBAB8 /* OrdersViewModel.swift */; };
+		24A8C8132B1E23E000AEBAB8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C8122B1E23E000AEBAB8 /* Date+Extension.swift */; };
+		24A8C8162B1E294200AEBAB8 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8C8152B1E294200AEBAB8 /* DateUtils.swift */; };
 		4912C17D2ADF0DD700296D43 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */; };
 		4927D63A2AE0BA210093D86E /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4927D6392AE0BA210093D86E /* SocialNetwork.swift */; };
 		4927D6402AE18B330093D86E /* CustomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */; };
@@ -181,6 +184,9 @@
 		24A8C80A2B1AFC4600AEBAB8 /* PaymentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentType.swift; sourceTree = "<group>"; };
 		24A8C80C2B1AFC5B00AEBAB8 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 		24A8C80E2B1AFE5800AEBAB8 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		24A8C8102B1E1EC500AEBAB8 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		24A8C8122B1E23E000AEBAB8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		24A8C8152B1E294200AEBAB8 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		4912C17C2ADF0DD700296D43 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4927D6392AE0BA210093D86E /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
 		4927D63F2AE18B330093D86E /* CustomTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
@@ -349,6 +355,7 @@
 				2427D4F12B196789008047B2 /* Orders.storyboard */,
 				2427D4F32B1967DD008047B2 /* OrdersViewController.swift */,
 				2427D4F52B1967EF008047B2 /* OrdersViewController+Delegate.swift */,
+				24A8C8102B1E1EC500AEBAB8 /* OrdersViewModel.swift */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -373,6 +380,14 @@
 				24A8C80E2B1AFE5800AEBAB8 /* OrderItem.swift */,
 			);
 			path = CheckoutOrder;
+			sourceTree = "<group>";
+		};
+		24A8C8142B1E293200AEBAB8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24A8C8152B1E294200AEBAB8 /* DateUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4964D30A2AED6DBE00089439 /* Cells */ = {
@@ -424,6 +439,7 @@
 		4983C4DC2ADA2B52002DDDA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				24A8C8142B1E293200AEBAB8 /* Utils */,
 				FA6E9B452B157D610094E292 /* Cells */,
 				4969E38E2AE0535500E7D00C /* Components */,
 				4983C4DD2ADA2B64002DDDA2 /* Extensions */,
@@ -436,6 +452,7 @@
 			children = (
 				4983C4E02ADA2CAD002DDDA2 /* UIButton+Extension.swift */,
 				49D22F582ADDFF3C00A3C54C /* UIView+Extension.swift */,
+				24A8C8122B1E23E000AEBAB8 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -503,6 +520,14 @@
 				FA4800972AFAE7DE009F2908 /* RestaurantDataBaseService.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		79BCA21B1BCEDCE307623F75 /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = xcschemes;
+			path = FoodDeliveryUIKit.xcodeproj/project.xcworkspace/xcuserdata/cl.vargas.xcuserdatad/xcschemes;
 			sourceTree = "<group>";
 		};
 		D15276A22AE1A408008CAE26 /* Home */ = {
@@ -595,6 +620,7 @@
 				D1D381E02AD4F57F009D31CC /* FoodDeliveryUIKitUITests */,
 				D1D381BE2AD4F575009D31CC /* Products */,
 				FA0FFD742B0FFD830046AF71 /* Frameworks */,
+				79BCA21B1BCEDCE307623F75 /* xcschemes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1025,6 +1051,7 @@
 				D1FCEE932AEC984A000635A0 /* MemoriaRestaurante.swift in Sources */,
 				FA0BA9402AFB039B00256304 /* HomeViewModel.swift in Sources */,
 				FA575F142B09471F00767E08 /* AllCategoriesViewModel.swift in Sources */,
+				24A8C8112B1E1EC500AEBAB8 /* OrdersViewModel.swift in Sources */,
 				D1D381C52AD4F575009D31CC /* ViewController.swift in Sources */,
 				D1FCEE8A2AEC9115000635A0 /* BurguerCategoryCollectionViewCell.swift in Sources */,
 				D15276A62AE1A4BA008CAE26 /* HomeViewController.swift in Sources */,
@@ -1056,6 +1083,7 @@
 				24A8C80F2B1AFE5800AEBAB8 /* OrderItem.swift in Sources */,
 				FA48009A2AFAE9DF009F2908 /* Restaurant.swift in Sources */,
 				D1FA03C22ADF5C4B00C41E99 /* LoginContainerViewController.swift in Sources */,
+				24A8C8162B1E294200AEBAB8 /* DateUtils.swift in Sources */,
 				4969E3902AE0543300E7D00C /* SkyBlueButton.swift in Sources */,
 				FA5BF2502AFC485D006EF351 /* TabSuperiorView.swift in Sources */,
 				4927D6422AE18B5E0093D86E /* CustomTextFieldView.swift in Sources */,
@@ -1108,6 +1136,7 @@
 				49CE24972AF213FB002BFB49 /* CategoryRepository.swift in Sources */,
 				FA6E9B282B1540960094E292 /* MemoriaSearch.swift in Sources */,
 				4964D3182AEE04FF00089439 /* GalleryViewController.swift in Sources */,
+				24A8C8132B1E23E000AEBAB8 /* Date+Extension.swift in Sources */,
 				FA6C99122B17F4A60012E7FB /* SearchRepository.swift in Sources */,
 				49D22F592ADDFF3C00A3C54C /* UIView+Extension.swift in Sources */,
 				FA575EFA2B08FA6400767E08 /* ResentSearchView.swift in Sources */,
